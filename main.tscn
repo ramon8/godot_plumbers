@@ -1,0 +1,47 @@
+[gd_scene load_steps=6 format=3 uid="uid://bau32monss3uc"]
+
+[ext_resource type="PackedScene" uid="uid://blnubvuvrp3l2" path="res://Objects/camera.tscn" id="1_emjpw"]
+[ext_resource type="Shader" path="res://Scenes/level.gdshader" id="2_1ydqe"]
+[ext_resource type="PackedScene" uid="uid://dl12u8p0ybyw3" path="res://Scenes/menu.tscn" id="3_ioa36"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_nemac"]
+shader = ExtResource("2_1ydqe")
+shader_parameter/overlay = true
+shader_parameter/scanlines_opacity = 0.0
+shader_parameter/scanlines_width = 0.25
+shader_parameter/grille_opacity = 0.0
+shader_parameter/resolution = Vector2(1280, 720)
+shader_parameter/pixelate = false
+shader_parameter/roll = false
+shader_parameter/roll_speed = 0.0
+shader_parameter/roll_size = 0.0
+shader_parameter/roll_variation = 1.8
+shader_parameter/distort_intensity = 0.05
+shader_parameter/noise_opacity = 0.4
+shader_parameter/noise_speed = 5.0
+shader_parameter/static_noise_intensity = 0.06
+shader_parameter/aberration = 0.03
+shader_parameter/brightness = 1.4
+shader_parameter/discolor = true
+shader_parameter/warp_amount = 1.0
+shader_parameter/clip_warp = false
+shader_parameter/vignette_intensity = 0.4
+shader_parameter/vignette_opacity = 0.5
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_6un5k"]
+
+[node name="Main" type="Node2D"]
+position = Vector2(640, 360)
+
+[node name="Camera" parent="." instance=ExtResource("1_emjpw")]
+
+[node name="Shader" type="Sprite2D" parent="Camera"]
+material = SubResource("ShaderMaterial_nemac")
+position = Vector2(3.05176e-05, -1.52588e-05)
+scale = Vector2(1280, 720)
+texture = SubResource("CanvasTexture_6un5k")
+
+[node name="Levels" type="Node" parent="."]
+
+[node name="menu" parent="Levels" instance=ExtResource("3_ioa36")]
+position = Vector2(640, 360)

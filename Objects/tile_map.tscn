@@ -1,10 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://8mwnbl40ylai"]
+[gd_scene load_steps=4 format=3 uid="uid://e3ofeanof52m"]
 
-[ext_resource type="Texture2D" uid="uid://den10luw0yqkt" path="res://Assets/Terrain (16x16).png" id="1_17dne"]
-[ext_resource type="PackedScene" uid="uid://cgkh0i2fr8lgo" path="res://Objects/plumber.tscn" id="3_uxv0i"]
+[ext_resource type="Texture2D" uid="uid://den10luw0yqkt" path="res://Assets/Terrain (16x16).png" id="1_nvxsq"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lhsx0"]
-texture = ExtResource("1_17dne")
+texture = ExtResource("1_nvxsq")
 0:0/0 = 0
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:0/0/physics_layer_0/angular_velocity = 0.0
@@ -586,10 +585,7 @@ texture = ExtResource("1_17dne")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_lhsx0")
 
-[node name="Level_1" type="Node2D"]
-
-[node name="TileMap" type="TileMap" parent="."]
+[node name="TileMap" type="TileMap"]
 tile_set = SubResource("TileSet_48iyh")
 format = 2
-
-[node name="Character" parent="." instance=ExtResource("3_uxv0i")]
+layer_0/tile_data = PackedInt32Array(0, 786432, 0, 1, 917504, 0)

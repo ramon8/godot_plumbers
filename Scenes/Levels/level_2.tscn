@@ -1,10 +1,7 @@
-[gd_scene load_steps=8 format=3 uid="uid://bmya4xgjvr81"]
+[gd_scene load_steps=5 format=3 uid="uid://8rq8lhqtrfkk"]
 
-[ext_resource type="PackedScene" path="res://Objects/plumber.tscn" id="1_gfttm"]
+[ext_resource type="PackedScene" uid="uid://cgkh0i2fr8lgo" path="res://Objects/plumber.tscn" id="1_gfttm"]
 [ext_resource type="Texture2D" uid="uid://den10luw0yqkt" path="res://Assets/Terrain (16x16).png" id="2_j4t25"]
-[ext_resource type="Texture2D" uid="uid://2dhejti3ljxt" path="res://Assets/background.png" id="3_g1wlv"]
-[ext_resource type="PackedScene" path="res://Objects/killer.tscn" id="6_5qge0"]
-[ext_resource type="PackedScene" uid="uid://cvudls5ogjing" path="res://Objects/flag.tscn" id="7_aber3"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lhsx0"]
 texture = ExtResource("2_j4t25")
@@ -596,24 +593,5 @@ tile_set = SubResource("TileSet_48iyh")
 format = 2
 layer_0/tile_data = PackedInt32Array(0, 393216, 0, 1, 458752, 0, 2, 458752, 0, 3, 458752, 0, 4, 458752, 0, 5, 458752, 0, 6, 458752, 0, 7, 458752, 0, 8, 458752, 0, 9, 458752, 0, 10, 458752, 0, 11, 458752, 0, 12, 458752, 0, 13, 458752, 0, 14, 458752, 0, 15, 458752, 0, 16, 458752, 0, 17, 458752, 0, 18, 458752, 0, 19, 458752, 0, 20, 458752, 0, 21, 458752, 0, 22, 458752, 0, 23, 458752, 0, 24, 458752, 0, 25, 458752, 0, 26, 458752, 0, 27, 458752, 0, 28, 458752, 0, 29, 458752, 0, 30, 524288, 0, 65537, 458752, 1, 65538, 458752, 1, 65539, 458752, 1, 65540, 458752, 1, 65541, 458752, 1, 65542, 458752, 1, 65543, 458752, 1, 65544, 458752, 1, 65545, 458752, 1, 65546, 458752, 1, 65547, 458752, 1, 65548, 458752, 1, 65549, 458752, 1, 65550, 458752, 1, 65551, 458752, 1, 65552, 458752, 1, 65553, 458752, 1, 65554, 458752, 1, 65555, 458752, 1, 65556, 458752, 1, 65557, 458752, 1, 65558, 458752, 1, 65559, 458752, 1, 65560, 458752, 1, 65561, 458752, 1, 65562, 458752, 1, 65563, 458752, 1, 65564, 458752, 1, 65565, 458752, 1, 131073, 458752, 2, 131074, 458752, 2, 131075, 458752, 2, 131076, 458752, 2, 131077, 458752, 2, 131078, 458752, 2, 131079, 458752, 2, 131080, 458752, 2, 131081, 458752, 2, 131082, 458752, 2, 131083, 458752, 2, 131084, 458752, 2, 131085, 458752, 2, 131086, 458752, 2, 131087, 458752, 2, 131088, 458752, 2, 131089, 458752, 2, 131090, 458752, 2, 131091, 458752, 2, 131092, 458752, 2, 131093, 458752, 2, 131094, 458752, 2, 131095, 458752, 2, 131096, 458752, 2, 131097, 458752, 2, 131098, 458752, 2, 131099, 458752, 2, 131100, 458752, 2, 131101, 458752, 2, 65566, 524288, 1, 131102, 524288, 2, 65536, 393216, 1, 131072, 393216, 2)
 
-[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
-
-[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
-motion_scale = Vector2(0.5, 1)
-motion_mirroring = Vector2(1984, 1024)
-
-[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
-texture = ExtResource("3_g1wlv")
-
 [node name="Character" parent="." instance=ExtResource("1_gfttm")]
 position = Vector2(15, -6)
-
-[node name="Killer" parent="." instance=ExtResource("6_5qge0")]
-position = Vector2(328, 144)
-
-[node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(232, -112)
-
-[node name="Flag" parent="." instance=ExtResource("7_aber3")]
-position = Vector2(136, -8)
-next_level = 3

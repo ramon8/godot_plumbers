@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3]
+[gd_scene load_steps=16 format=3 uid="uid://cgkh0i2fr8lgo"]
 
 [ext_resource type="Texture2D" uid="uid://bl4ppgbs06ino" path="res://Assets/plumber.png" id="1_8y5qm"]
 [ext_resource type="Script" path="res://Scripts/Character.gd" id="2_53uhu"]
@@ -44,23 +44,6 @@ nodes/state/node = SubResource("AnimationNodeTransition_aovvl")
 nodes/state/position = Vector2(260, 80)
 node_connections = [&"output", 0, &"state", &"state", 0, &"Animation 4", &"state", 1, &"Animation", &"state", 2, &"Animation 2", &"state", 3, &"Animation 3"]
 
-[sub_resource type="Animation" id="Animation_4ik3m"]
-resource_name = "walk"
-length = 0.6
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
-"update": 1,
-"values": [0, 1, 2, 3, 4, 5]
-}
-
 [sub_resource type="Animation" id="Animation_attid"]
 length = 0.001
 tracks/0/type = "value"
@@ -74,6 +57,23 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 1,
 "values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_7yrk7"]
+resource_name = "dead"
+length = 0.1
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [7]
 }
 
 [sub_resource type="Animation" id="Animation_gegfo"]
@@ -110,9 +110,9 @@ tracks/0/keys = {
 "values": [6]
 }
 
-[sub_resource type="Animation" id="Animation_7yrk7"]
-resource_name = "dead"
-length = 0.1
+[sub_resource type="Animation" id="Animation_4ik3m"]
+resource_name = "walk"
+length = 0.6
 loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -121,10 +121,10 @@ tracks/0/path = NodePath(".:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": [7]
+"values": [0, 1, 2, 3, 4, 5]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_pmdv3"]
