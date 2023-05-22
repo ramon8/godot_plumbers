@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=3 uid="uid://chr870jlao3ta"]
+
+[ext_resource type="Script" path="res://Scripts/bouncer.gd" id="1_ii72q"]
+[ext_resource type="Texture2D" uid="uid://drdqdmyjnm0pu" path="res://Assets/Idle.png" id="2_rj6kp"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1ykod"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bw2th"]
+size = Vector2(14, 7)
+
+[node name="Bouncer" type="StaticBody2D"]
+script = ExtResource("1_ii72q")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(4.17233e-07, 4.17233e-07)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("2_rj6kp")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_1ykod")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0, -12.5)
+shape = SubResource("RectangleShape2D_bw2th")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
