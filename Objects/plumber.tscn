@@ -1,7 +1,16 @@
-[gd_scene load_steps=18 format=3 uid="uid://cgkh0i2fr8lgo"]
+[gd_scene load_steps=26 format=3 uid="uid://opp5j4xskb1s"]
 
-[ext_resource type="Texture2D" uid="uid://bl4ppgbs06ino" path="res://Assets/plumber.png" id="1_8y5qm"]
 [ext_resource type="Script" path="res://Scripts/Character.gd" id="2_53uhu"]
+[ext_resource type="Texture2D" uid="uid://bl4ppgbs06ino" path="res://Assets/art/plumber.png" id="2_eipm2"]
+[ext_resource type="AudioStream" uid="uid://o1cv1ikixriu" path="res://Assets/audio/yuju.mp3" id="3_cnp5d"]
+[ext_resource type="AudioStream" uid="uid://bitiq7kbwb5bn" path="res://Assets/audio/jump.mp3" id="3_oimpc"]
+[ext_resource type="AudioStream" uid="uid://dq6i6lg8qfa6i" path="res://Assets/audio/yuju1.mp3" id="4_so4fw"]
+[ext_resource type="AudioStream" uid="uid://efiue747abb1" path="res://Assets/audio/yuju2.mp3" id="5_5s6fl"]
+[ext_resource type="AudioStream" uid="uid://dnop1654kbyeo" path="res://Assets/audio/yuju3.mp3" id="6_qbxvx"]
+[ext_resource type="AudioStream" uid="uid://b4hbw4hftrgvp" path="res://Assets/audio/yuju7.mp3" id="10_ntqqb"]
+[ext_resource type="AudioStream" uid="uid://d0lddec8chj1h" path="res://Assets/audio/yuju8.mp3" id="11_bdbyk"]
+[ext_resource type="AudioStream" uid="uid://ctn5mc3uqxd3c" path="res://Assets/audio/yuju9.mp3" id="12_geb3n"]
+[ext_resource type="AudioStream" uid="uid://dubk2de7tegdg" path="res://Assets/audio/mamamia.mp3" id="13_caq0b"]
 
 [sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_r11yn"]
 animation = &"idle"
@@ -36,7 +45,7 @@ input_4/auto_advance = false
 input_4/reset = true
 
 [sub_resource type="AnimationNodeBlendTree" id="AnimationNodeBlendTree_care3"]
-graph_offset = Vector2(-215, 177)
+graph_offset = Vector2(-64, 295)
 nodes/Animation/node = SubResource("AnimationNodeAnimation_locmj")
 nodes/Animation/position = Vector2(40, 80)
 "nodes/Animation 2/node" = SubResource("AnimationNodeAnimation_r11yn")
@@ -67,23 +76,6 @@ tracks/0/keys = {
 "values": [0]
 }
 
-[sub_resource type="Animation" id="Animation_7yrk7"]
-resource_name = "dead"
-length = 0.1
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [7]
-}
-
 [sub_resource type="Animation" id="Animation_dctfp"]
 resource_name = "die"
 length = 0.001
@@ -98,6 +90,20 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 1,
 "values": [7]
+}
+tracks/1/type = "method"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../die")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [0.0],
+"method": &"play"
+}]
 }
 
 [sub_resource type="Animation" id="Animation_gegfo"]
@@ -120,7 +126,6 @@ tracks/0/keys = {
 [sub_resource type="Animation" id="Animation_q7vtn"]
 resource_name = "jump"
 length = 0.1
-loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -154,7 +159,6 @@ tracks/0/keys = {
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_pmdv3"]
 _data = {
 "RESET": SubResource("Animation_attid"),
-"dead": SubResource("Animation_7yrk7"),
 "die": SubResource("Animation_dctfp"),
 "idle": SubResource("Animation_gegfo"),
 "jump": SubResource("Animation_q7vtn"),
@@ -171,7 +175,7 @@ script = ExtResource("2_53uhu")
 
 [node name="Plumber" type="Sprite2D" parent="."]
 position = Vector2(0, -12)
-texture = ExtResource("1_8y5qm")
+texture = ExtResource("2_eipm2")
 offset = Vector2(-2, -2.5)
 hframes = 8
 
@@ -197,3 +201,49 @@ shape = SubResource("CapsuleShape2D_efuuq")
 visible = false
 offset_right = 40.0
 offset_bottom = 23.0
+
+[node name="Yujus" type="Node" parent="."]
+
+[node name="Yuju2" type="AudioStreamPlayer2D" parent="Yujus"]
+stream = ExtResource("4_so4fw")
+volume_db = -20.0
+pitch_scale = 1.5
+
+[node name="Yuju3" type="AudioStreamPlayer2D" parent="Yujus"]
+stream = ExtResource("5_5s6fl")
+volume_db = -20.0
+pitch_scale = 1.5
+
+[node name="Yuju4" type="AudioStreamPlayer2D" parent="Yujus"]
+stream = ExtResource("6_qbxvx")
+volume_db = -20.0
+pitch_scale = 1.5
+
+[node name="Yuju8" type="AudioStreamPlayer2D" parent="Yujus"]
+stream = ExtResource("10_ntqqb")
+volume_db = -20.0
+pitch_scale = 1.5
+
+[node name="Yuju9" type="AudioStreamPlayer2D" parent="Yujus"]
+stream = ExtResource("11_bdbyk")
+volume_db = -20.0
+pitch_scale = 1.5
+
+[node name="Yuju10" type="AudioStreamPlayer2D" parent="Yujus"]
+stream = ExtResource("12_geb3n")
+volume_db = -20.0
+pitch_scale = 1.5
+
+[node name="Yuju11" type="AudioStreamPlayer2D" parent="Yujus"]
+stream = ExtResource("3_cnp5d")
+volume_db = -20.0
+pitch_scale = 1.5
+
+[node name="jump" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_oimpc")
+volume_db = -20.0
+
+[node name="die" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("13_caq0b")
+volume_db = -20.0
+pitch_scale = 1.34

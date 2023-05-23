@@ -1,6 +1,6 @@
-[gd_scene load_steps=5 format=3 uid="uid://djfb40d221xjc"]
+[gd_scene load_steps=5 format=3 uid="uid://bl6jcpcch1kux"]
 
-[ext_resource type="Texture2D" uid="uid://brcq0cuujryjn" path="res://Assets/enemie.png" id="1_k8xdw"]
+[ext_resource type="Texture2D" uid="uid://brcq0cuujryjn" path="res://Assets/art/enemie.png" id="1_k8xdw"]
 [ext_resource type="Script" path="res://Objects/enemie.gd" id="1_su33l"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xswoe"]
@@ -9,33 +9,31 @@ size = Vector2(24, 23)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_km0is"]
 size = Vector2(16, 16)
 
-[node name="Enemie" type="Node2D"]
-
-[node name="Path2D" type="Path2D" parent="."]
+[node name="Enemie" type="Path2D"]
 script = ExtResource("1_su33l")
 
-[node name="PathFollow2D" type="PathFollow2D" parent="Path2D"]
+[node name="PathFollow2D" type="PathFollow2D" parent="."]
 position = Vector2(0, -1)
 rotates = false
 
-[node name="Enemie" type="Area2D" parent="Path2D/PathFollow2D"]
+[node name="Enemie" type="Area2D" parent="PathFollow2D"]
 collision_mask = 3
 
-[node name="Sprite2D" type="Sprite2D" parent="Path2D/PathFollow2D/Enemie"]
+[node name="Sprite2D" type="Sprite2D" parent="PathFollow2D/Enemie"]
 position = Vector2(9.53674e-07, -1.5)
 texture = ExtResource("1_k8xdw")
 hframes = 7
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Path2D/PathFollow2D/Enemie"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PathFollow2D/Enemie"]
 position = Vector2(-1, -0.5)
 shape = SubResource("RectangleShape2D_xswoe")
 
-[node name="Area2D" type="Area2D" parent="Path2D/PathFollow2D/Enemie"]
+[node name="Area2D" type="Area2D" parent="PathFollow2D/Enemie"]
 collision_mask = 3
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Path2D/PathFollow2D/Enemie/Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PathFollow2D/Enemie/Area2D"]
 position = Vector2(-1, -20)
 shape = SubResource("RectangleShape2D_km0is")
 
-[connection signal="body_entered" from="Path2D/PathFollow2D/Enemie" to="Path2D" method="_on_enemie_body_entered"]
-[connection signal="body_entered" from="Path2D/PathFollow2D/Enemie/Area2D" to="Path2D" method="_on_area_2d_body_entered"]
+[connection signal="body_entered" from="PathFollow2D/Enemie" to="." method="_on_enemie_body_entered"]
+[connection signal="body_entered" from="PathFollow2D/Enemie/Area2D" to="." method="_on_area_2d_body_entered"]

@@ -1,7 +1,7 @@
-[gd_scene load_steps=8 format=3 uid="uid://bva4ehsnhirle"]
+[gd_scene load_steps=8 format=3]
 
 [ext_resource type="Script" path="res://Objects/button.gd" id="1_26yds"]
-[ext_resource type="Texture2D" uid="uid://38hc7exqsi37" path="res://Assets/button.png" id="1_424p1"]
+[ext_resource type="Texture2D" uid="uid://38hc7exqsi37" path="res://Assets/art/button.png" id="1_424p1"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_m6hcl"]
 size = Vector2(14, 8)

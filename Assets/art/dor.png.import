@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bpjh7ts2dd81v"
-path="res://.godot/imported/dor.png-c1a6cb772c1bb69779c6e1d82d39c959.ctex"
+path="res://.godot/imported/dor.png-32841355289aaf189ff79d698824cec4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/dor.png"
-dest_files=["res://.godot/imported/dor.png-c1a6cb772c1bb69779c6e1d82d39c959.ctex"]
+source_file="res://Assets/art/dor.png"
+dest_files=["res://.godot/imported/dor.png-32841355289aaf189ff79d698824cec4.ctex"]
 
 [params]
 

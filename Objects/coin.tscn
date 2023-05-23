@@ -1,7 +1,8 @@
-[gd_scene load_steps=8 format=3 uid="uid://dfuxp4fix8ow7"]
+[gd_scene load_steps=9 format=3 uid="uid://c5qyxn4rufuhw"]
 
 [ext_resource type="Script" path="res://Scripts/coin.gd" id="1_i1mi0"]
-[ext_resource type="Texture2D" uid="uid://1mvdjxr21w51" path="res://Assets/coin.png" id="1_uxgpi"]
+[ext_resource type="Texture2D" uid="uid://1mvdjxr21w51" path="res://Assets/art/coin.png" id="1_uxgpi"]
+[ext_resource type="AudioStream" uid="uid://dva3yh08fsp1p" path="res://Assets/audio/mario-coin.mp3" id="3_xfkq1"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_fvx5k"]
 radius = 6.0
@@ -36,6 +37,20 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 1,
 "values": [9, 0, 9, 0]
+}
+tracks/1/type = "method"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../Coin")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [0.0],
+"method": &"play"
+}]
 }
 
 [sub_resource type="Animation" id="Animation_o4r2q"]
@@ -78,6 +93,11 @@ autoplay = "idle"
 libraries = {
 "": SubResource("AnimationLibrary_vhjxm")
 }
+
+[node name="Coin" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_xfkq1")
+volume_db = -16.277
+pitch_scale = 2.22
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="animation_finished" from="Sprite2D/AnimationPlayer" to="." method="_on_animation_player_animation_finished"]

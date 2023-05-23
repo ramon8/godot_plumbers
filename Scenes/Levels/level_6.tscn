@@ -1,0 +1,1931 @@
+[gd_scene load_steps=6 format=3 uid="uid://c553yyfjic2fi"]
+
+[ext_resource type="Texture2D" uid="uid://den10luw0yqkt" path="res://Assets/art/Terrain (16x16).png" id="1_0ahtn"]
+[ext_resource type="PackedScene" uid="uid://opp5j4xskb1s" path="res://Objects/plumber.tscn" id="2_o3mkl"]
+[ext_resource type="PackedScene" uid="uid://c5qyxn4rufuhw" path="res://Objects/coin.tscn" id="7_ueomv"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lhsx0"]
+texture = ExtResource("1_0ahtn")
+0:0/0 = 0
+0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:0/0/physics_layer_0/angular_velocity = 0.0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:0/0 = 0
+1:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:0/0/physics_layer_0/angular_velocity = 0.0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:0/0 = 0
+2:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+2:0/0/physics_layer_0/angular_velocity = 0.0
+2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:0/0 = 0
+3:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+3:0/0/physics_layer_0/angular_velocity = 0.0
+3:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:0/0 = 0
+4:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+4:0/0/physics_layer_0/angular_velocity = 0.0
+4:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+6:0/0 = 0
+6:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+6:0/0/physics_layer_0/angular_velocity = 0.0
+6:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+7:0/0 = 0
+7:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+7:0/0/physics_layer_0/angular_velocity = 0.0
+7:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+8:0/0 = 0
+8:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+8:0/0/physics_layer_0/angular_velocity = 0.0
+8:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+9:0/0 = 0
+9:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+9:0/0/physics_layer_0/angular_velocity = 0.0
+9:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+10:0/0 = 0
+10:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+10:0/0/physics_layer_0/angular_velocity = 0.0
+10:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+12:0/0 = 0
+12:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+12:0/0/physics_layer_0/angular_velocity = 0.0
+12:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+13:0/0 = 0
+13:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+13:0/0/physics_layer_0/angular_velocity = 0.0
+13:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+14:0/0 = 0
+14:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+14:0/0/physics_layer_0/angular_velocity = 0.0
+14:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+15:0/0 = 0
+15:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+15:0/0/physics_layer_0/angular_velocity = 0.0
+15:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+17:0/0 = 0
+17:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+17:0/0/physics_layer_0/angular_velocity = 0.0
+17:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+18:0/0 = 0
+18:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+18:0/0/physics_layer_0/angular_velocity = 0.0
+18:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+19:0/0 = 0
+19:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+19:0/0/physics_layer_0/angular_velocity = 0.0
+19:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:1/0 = 0
+0:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:1/0/physics_layer_0/angular_velocity = 0.0
+0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:1/0 = 0
+1:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:1/0/physics_layer_0/angular_velocity = 0.0
+1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:1/0 = 0
+2:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+2:1/0/physics_layer_0/angular_velocity = 0.0
+2:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:1/0 = 0
+3:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+3:1/0/physics_layer_0/angular_velocity = 0.0
+3:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:1/0 = 0
+4:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+4:1/0/physics_layer_0/angular_velocity = 0.0
+4:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+6:1/0 = 0
+6:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+6:1/0/physics_layer_0/angular_velocity = 0.0
+6:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+7:1/0 = 0
+7:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+7:1/0/physics_layer_0/angular_velocity = 0.0
+7:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+8:1/0 = 0
+8:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+8:1/0/physics_layer_0/angular_velocity = 0.0
+8:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+9:1/0 = 0
+9:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+9:1/0/physics_layer_0/angular_velocity = 0.0
+9:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+10:1/0 = 0
+10:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+10:1/0/physics_layer_0/angular_velocity = 0.0
+10:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+12:1/0 = 0
+12:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+12:1/0/physics_layer_0/angular_velocity = 0.0
+12:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+13:1/0 = 0
+13:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+13:1/0/physics_layer_0/angular_velocity = 0.0
+13:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+14:1/0 = 0
+14:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+14:1/0/physics_layer_0/angular_velocity = 0.0
+14:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+15:1/0 = 0
+15:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+15:1/0/physics_layer_0/angular_velocity = 0.0
+15:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+17:1/0 = 0
+17:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+17:1/0/physics_layer_0/angular_velocity = 0.0
+17:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+18:1/0 = 0
+18:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+18:1/0/physics_layer_0/angular_velocity = 0.0
+18:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+19:1/0 = 0
+19:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+19:1/0/physics_layer_0/angular_velocity = 0.0
+19:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:2/0 = 0
+0:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:2/0/physics_layer_0/angular_velocity = 0.0
+0:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:2/0 = 0
+1:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:2/0/physics_layer_0/angular_velocity = 0.0
+1:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:2/0 = 0
+2:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+2:2/0/physics_layer_0/angular_velocity = 0.0
+2:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+6:2/0 = 0
+6:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+6:2/0/physics_layer_0/angular_velocity = 0.0
+6:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+7:2/0 = 0
+7:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+7:2/0/physics_layer_0/angular_velocity = 0.0
+7:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+8:2/0 = 0
+8:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+8:2/0/physics_layer_0/angular_velocity = 0.0
+8:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+13:2/0 = 0
+13:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+13:2/0/physics_layer_0/angular_velocity = 0.0
+13:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+14:2/0 = 0
+14:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+14:2/0/physics_layer_0/angular_velocity = 0.0
+14:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+15:2/0 = 0
+15:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+15:2/0/physics_layer_0/angular_velocity = 0.0
+15:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+17:2/0 = 0
+17:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+17:2/0/physics_layer_0/angular_velocity = 0.0
+17:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+18:2/0 = 0
+18:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+18:2/0/physics_layer_0/angular_velocity = 0.0
+18:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+19:2/0 = 0
+19:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+19:2/0/physics_layer_0/angular_velocity = 0.0
+19:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:4/0 = 0
+0:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:4/0/physics_layer_0/angular_velocity = 0.0
+0:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:4/0 = 0
+1:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:4/0/physics_layer_0/angular_velocity = 0.0
+1:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:4/0 = 0
+2:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+2:4/0/physics_layer_0/angular_velocity = 0.0
+2:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:4/0 = 0
+3:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+3:4/0/physics_layer_0/angular_velocity = 0.0
+3:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:4/0 = 0
+4:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+4:4/0/physics_layer_0/angular_velocity = 0.0
+4:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+6:4/0 = 0
+6:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+6:4/0/physics_layer_0/angular_velocity = 0.0
+6:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+7:4/0 = 0
+7:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+7:4/0/physics_layer_0/angular_velocity = 0.0
+7:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+8:4/0 = 0
+8:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+8:4/0/physics_layer_0/angular_velocity = 0.0
+8:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+9:4/0 = 0
+9:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+9:4/0/physics_layer_0/angular_velocity = 0.0
+9:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+10:4/0 = 0
+10:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+10:4/0/physics_layer_0/angular_velocity = 0.0
+10:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+12:4/0 = 0
+12:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+12:4/0/physics_layer_0/angular_velocity = 0.0
+12:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+13:4/0 = 0
+13:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+13:4/0/physics_layer_0/angular_velocity = 0.0
+13:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+14:4/0 = 0
+14:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+14:4/0/physics_layer_0/angular_velocity = 0.0
+14:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+15:4/0 = 0
+15:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+15:4/0/physics_layer_0/angular_velocity = 0.0
+15:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+17:4/0 = 0
+17:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+17:4/0/physics_layer_0/angular_velocity = 0.0
+17:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+18:4/0 = 0
+18:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+18:4/0/physics_layer_0/angular_velocity = 0.0
+18:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+19:4/0 = 0
+19:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+19:4/0/physics_layer_0/angular_velocity = 0.0
+19:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+20:4/0 = 0
+20:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+20:4/0/physics_layer_0/angular_velocity = 0.0
+20:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+21:4/0 = 0
+21:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+21:4/0/physics_layer_0/angular_velocity = 0.0
+21:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:5/0 = 0
+0:5/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:5/0/physics_layer_0/angular_velocity = 0.0
+0:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:5/0 = 0
+1:5/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:5/0/physics_layer_0/angular_velocity = 0.0
+1:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:5/0 = 0
+2:5/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+2:5/0/physics_layer_0/angular_velocity = 0.0
+2:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:5/0 = 0
+3:5/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+3:5/0/physics_layer_0/angular_velocity = 0.0
+3:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:5/0 = 0
+4:5/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+4:5/0/physics_layer_0/angular_velocity = 0.0
+4:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+6:5/0 = 0
+6:5/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+6:5/0/physics_layer_0/angular_velocity = 0.0
+6:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+7:5/0 = 0
+7:5/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+7:5/0/physics_layer_0/angular_velocity = 0.0
+7:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+8:5/0 = 0
+8:5/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+8:5/0/physics_layer_0/angular_velocity = 0.0
+8:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+9:5/0 = 0
+9:5/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+9:5/0/physics_layer_0/angular_velocity = 0.0
+9:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+10:5/0 = 0
+10:5/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+10:5/0/physics_layer_0/angular_velocity = 0.0
+10:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+12:5/0 = 0
+12:5/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+12:5/0/physics_layer_0/angular_velocity = 0.0
+12:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+13:5/0 = 0
+13:5/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+13:5/0/physics_layer_0/angular_velocity = 0.0
+13:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+14:5/0 = 0
+14:5/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+14:5/0/physics_layer_0/angular_velocity = 0.0
+14:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+15:5/0 = 0
+15:5/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+15:5/0/physics_layer_0/angular_velocity = 0.0
+15:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+17:5/0 = 0
+17:5/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+17:5/0/physics_layer_0/angular_velocity = 0.0
+17:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+18:5/0 = 0
+18:5/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+18:5/0/physics_layer_0/angular_velocity = 0.0
+18:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+19:5/0 = 0
+19:5/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+19:5/0/physics_layer_0/angular_velocity = 0.0
+19:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+20:5/0 = 0
+20:5/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+20:5/0/physics_layer_0/angular_velocity = 0.0
+20:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+21:5/0 = 0
+21:5/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+21:5/0/physics_layer_0/angular_velocity = 0.0
+21:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:6/0 = 0
+0:6/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:6/0/physics_layer_0/angular_velocity = 0.0
+0:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:6/0 = 0
+1:6/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:6/0/physics_layer_0/angular_velocity = 0.0
+1:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:6/0 = 0
+2:6/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+2:6/0/physics_layer_0/angular_velocity = 0.0
+2:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+6:6/0 = 0
+6:6/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+6:6/0/physics_layer_0/angular_velocity = 0.0
+6:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+7:6/0 = 0
+7:6/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+7:6/0/physics_layer_0/angular_velocity = 0.0
+7:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+8:6/0 = 0
+8:6/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+8:6/0/physics_layer_0/angular_velocity = 0.0
+8:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+13:6/0 = 0
+13:6/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+13:6/0/physics_layer_0/angular_velocity = 0.0
+13:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+14:6/0 = 0
+14:6/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+14:6/0/physics_layer_0/angular_velocity = 0.0
+14:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+15:6/0 = 0
+15:6/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+15:6/0/physics_layer_0/angular_velocity = 0.0
+15:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+17:6/0 = 0
+17:6/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+17:6/0/physics_layer_0/angular_velocity = 0.0
+17:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+18:6/0 = 0
+18:6/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+18:6/0/physics_layer_0/angular_velocity = 0.0
+18:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+19:6/0 = 0
+19:6/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+19:6/0/physics_layer_0/angular_velocity = 0.0
+19:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:8/0 = 0
+0:8/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:8/0/physics_layer_0/angular_velocity = 0.0
+0:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:8/0 = 0
+1:8/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:8/0/physics_layer_0/angular_velocity = 0.0
+1:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:8/0 = 0
+2:8/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+2:8/0/physics_layer_0/angular_velocity = 0.0
+2:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:8/0 = 0
+3:8/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+3:8/0/physics_layer_0/angular_velocity = 0.0
+3:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:8/0 = 0
+4:8/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+4:8/0/physics_layer_0/angular_velocity = 0.0
+4:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+6:8/0 = 0
+6:8/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+6:8/0/physics_layer_0/angular_velocity = 0.0
+6:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+7:8/0 = 0
+7:8/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+7:8/0/physics_layer_0/angular_velocity = 0.0
+7:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+8:8/0 = 0
+8:8/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+8:8/0/physics_layer_0/angular_velocity = 0.0
+8:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+9:8/0 = 0
+9:8/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+9:8/0/physics_layer_0/angular_velocity = 0.0
+9:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+10:8/0 = 0
+10:8/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+10:8/0/physics_layer_0/angular_velocity = 0.0
+10:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+12:8/0 = 0
+12:8/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+12:8/0/physics_layer_0/angular_velocity = 0.0
+12:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+13:8/0 = 0
+13:8/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+13:8/0/physics_layer_0/angular_velocity = 0.0
+13:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+14:8/0 = 0
+14:8/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+14:8/0/physics_layer_0/angular_velocity = 0.0
+14:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+15:8/0 = 0
+15:8/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+15:8/0/physics_layer_0/angular_velocity = 0.0
+15:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+17:8/0 = 0
+17:8/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+17:8/0/physics_layer_0/angular_velocity = 0.0
+17:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+18:8/0 = 0
+18:8/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+18:8/0/physics_layer_0/angular_velocity = 0.0
+18:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+19:8/0 = 0
+19:8/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+19:8/0/physics_layer_0/angular_velocity = 0.0
+19:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+20:8/0 = 0
+20:8/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+20:8/0/physics_layer_0/angular_velocity = 0.0
+20:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:9/0 = 0
+0:9/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:9/0/physics_layer_0/angular_velocity = 0.0
+0:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:9/0 = 0
+1:9/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:9/0/physics_layer_0/angular_velocity = 0.0
+1:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:9/0 = 0
+2:9/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+2:9/0/physics_layer_0/angular_velocity = 0.0
+2:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:9/0 = 0
+3:9/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+3:9/0/physics_layer_0/angular_velocity = 0.0
+3:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:9/0 = 0
+4:9/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+4:9/0/physics_layer_0/angular_velocity = 0.0
+4:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+6:9/0 = 0
+6:9/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+6:9/0/physics_layer_0/angular_velocity = 0.0
+6:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+7:9/0 = 0
+7:9/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+7:9/0/physics_layer_0/angular_velocity = 0.0
+7:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+8:9/0 = 0
+8:9/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+8:9/0/physics_layer_0/angular_velocity = 0.0
+8:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+9:9/0 = 0
+9:9/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+9:9/0/physics_layer_0/angular_velocity = 0.0
+9:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+10:9/0 = 0
+10:9/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+10:9/0/physics_layer_0/angular_velocity = 0.0
+10:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+12:9/0 = 0
+12:9/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+12:9/0/physics_layer_0/angular_velocity = 0.0
+12:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+13:9/0 = 0
+13:9/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+13:9/0/physics_layer_0/angular_velocity = 0.0
+13:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+14:9/0 = 0
+14:9/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+14:9/0/physics_layer_0/angular_velocity = 0.0
+14:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+15:9/0 = 0
+15:9/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+15:9/0/physics_layer_0/angular_velocity = 0.0
+15:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+17:9/0 = 0
+17:9/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+17:9/0/physics_layer_0/angular_velocity = 0.0
+17:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+18:9/0 = 0
+18:9/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+18:9/0/physics_layer_0/angular_velocity = 0.0
+18:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+19:9/0 = 0
+19:9/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+19:9/0/physics_layer_0/angular_velocity = 0.0
+19:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+20:9/0 = 0
+20:9/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+20:9/0/physics_layer_0/angular_velocity = 0.0
+20:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:10/0 = 0
+0:10/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:10/0/physics_layer_0/angular_velocity = 0.0
+0:10/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:10/0 = 0
+1:10/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:10/0/physics_layer_0/angular_velocity = 0.0
+1:10/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:10/0 = 0
+2:10/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+2:10/0/physics_layer_0/angular_velocity = 0.0
+2:10/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+6:10/0 = 0
+6:10/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+6:10/0/physics_layer_0/angular_velocity = 0.0
+6:10/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+7:10/0 = 0
+7:10/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+7:10/0/physics_layer_0/angular_velocity = 0.0
+7:10/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+8:10/0 = 0
+8:10/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+8:10/0/physics_layer_0/angular_velocity = 0.0
+8:10/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+13:10/0 = 0
+13:10/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+13:10/0/physics_layer_0/angular_velocity = 0.0
+13:10/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+14:10/0 = 0
+14:10/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+14:10/0/physics_layer_0/angular_velocity = 0.0
+14:10/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+15:10/0 = 0
+15:10/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+15:10/0/physics_layer_0/angular_velocity = 0.0
+15:10/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+18:10/0 = 0
+18:10/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+18:10/0/physics_layer_0/angular_velocity = 0.0
+18:10/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+19:10/0 = 0
+19:10/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+19:10/0/physics_layer_0/angular_velocity = 0.0
+19:10/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+20:10/0 = 0
+20:10/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+20:10/0/physics_layer_0/angular_velocity = 0.0
+20:10/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+20:7/0 = 0
+20:7/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+20:7/0/physics_layer_0/angular_velocity = 0.0
+20:3/0 = 0
+20:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+20:3/0/physics_layer_0/angular_velocity = 0.0
+18:3/0 = 0
+18:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+18:3/0/physics_layer_0/angular_velocity = 0.0
+5:1/0 = 0
+5:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+5:1/0/physics_layer_0/angular_velocity = 0.0
+5:2/0 = 0
+5:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+5:2/0/physics_layer_0/angular_velocity = 0.0
+
+[sub_resource type="TileSet" id="TileSet_yeagj"]
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_lhsx0")
+
+[node name="Level_5" type="Node2D"]
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_yeagj")
+format = 2
+layer_0/tile_data = PackedInt32Array(2359301, 851968, 0, 2359302, 851968, 0, 2359303, 851968, 0, 2359304, 851968, 0, 2359305, 851968, 0, 2359306, 851968, 0, 2359307, 851968, 0, 2359308, 851968, 0, 2359309, 851968, 0, 2359310, 851968, 0, 2359311, 851968, 0, 2359312, 851968, 0, 2359313, 851968, 0, 2359314, 851968, 0, 2359315, 851968, 0, 2359298, 786432, 0, 2359299, 851968, 0, 2359300, 851968, 0, 2359316, 851968, 0, 2359317, 851968, 0, 2359318, 851968, 0, 2359319, 851968, 0, 2359320, 851968, 0, 2359321, 851968, 0, 2359322, 851968, 0, 2359323, 851968, 0, 2359324, 851968, 0, 2359325, 851968, 0, 2359326, 851968, 0, 2359327, 851968, 0, 2359328, 851968, 0, 2359329, 851968, 0, 2359330, 851968, 0, 2359331, 851968, 0, 2359332, 851968, 0, 2359333, 851968, 0, 2359334, 851968, 0, 2359335, 851968, 0, 2359336, 851968, 0, 2359337, 851968, 0, 2359338, 851968, 0, 2359339, 851968, 0, 2359340, 851968, 0, 2359341, 851968, 0, 2359342, 851968, 0, 2359343, 851968, 0, 2359344, 851968, 0, 2359345, 851968, 0, 2359346, 851968, 0, 2359347, 851968, 0, 2359348, 851968, 0, 2359349, 851968, 0, 2359350, 851968, 0, 2359351, 851968, 0, 2359352, 851968, 0, 2359353, 851968, 0, 2359354, 851968, 0, 2359355, 851968, 0, 2359356, 851968, 0, 2359357, 851968, 0, 2359358, 851968, 0, 2359359, 851968, 0, 2359360, 851968, 0, 2359361, 851968, 0, 2359362, 851968, 0, 2359363, 851968, 0, 2359364, 851968, 0, 2359365, 851968, 0, 2359366, 851968, 0, 2359367, 851968, 0, 2359368, 851968, 0, 2359369, 851968, 0, 2359370, 851968, 0, 2359371, 851968, 0, 2359372, 917504, 0, 2228226, 786432, 1, 2293762, 786432, 1, 2228300, 786432, 1, 2293836, 786432, 1)
+
+[node name="Character" parent="." instance=ExtResource("2_o3mkl")]
+position = Vector2(336, 432)
+
+[node name="Coins" type="Node2D" parent="."]
+
+[node name="Coin" parent="Coins" instance=ExtResource("7_ueomv")]
+position = Vector2(368, 504)
+
+[node name="Coin2" parent="Coins" instance=ExtResource("7_ueomv")]
+position = Vector2(381, 504)
+
+[node name="Coin3" parent="Coins" instance=ExtResource("7_ueomv")]
+position = Vector2(394, 504)
+
+[node name="Coin4" parent="Coins" instance=ExtResource("7_ueomv")]
+position = Vector2(407, 504)
+
+[node name="Coin7" parent="Coins" instance=ExtResource("7_ueomv")]
+position = Vector2(421, 504)
+
+[node name="Coin8" parent="Coins" instance=ExtResource("7_ueomv")]
+position = Vector2(434, 504)
+
+[node name="Coin6" parent="Coins" instance=ExtResource("7_ueomv")]
+position = Vector2(445, 504)
+
+[node name="Coin9" parent="Coins" instance=ExtResource("7_ueomv")]
+position = Vector2(458, 504)
+
+[node name="Coin10" parent="Coins" instance=ExtResource("7_ueomv")]
+position = Vector2(471, 504)
+
+[node name="Coin11" parent="Coins" instance=ExtResource("7_ueomv")]
+position = Vector2(485, 504)
+
+[node name="Coin12" parent="Coins" instance=ExtResource("7_ueomv")]
+position = Vector2(498, 504)
+
+[node name="Coin13" parent="Coins" instance=ExtResource("7_ueomv")]
+position = Vector2(509, 504)
+
+[node name="Coin14" parent="Coins" instance=ExtResource("7_ueomv")]
+position = Vector2(522, 504)
+
+[node name="Coin15" parent="Coins" instance=ExtResource("7_ueomv")]
+position = Vector2(535, 504)
+
+[node name="Coin16" parent="Coins" instance=ExtResource("7_ueomv")]
+position = Vector2(549, 504)
+
+[node name="Coin17" parent="Coins" instance=ExtResource("7_ueomv")]
+position = Vector2(562, 504)
+
+[node name="Coin18" parent="Coins" instance=ExtResource("7_ueomv")]
+position = Vector2(573, 504)
+
+[node name="Coin19" parent="Coins" instance=ExtResource("7_ueomv")]
+position = Vector2(586, 504)
+
+[node name="Coin20" parent="Coins" instance=ExtResource("7_ueomv")]
+position = Vector2(599, 504)
+
+[node name="Coin21" parent="Coins" instance=ExtResource("7_ueomv")]
+position = Vector2(613, 504)
+
+[node name="Coin22" parent="Coins" instance=ExtResource("7_ueomv")]
+position = Vector2(626, 504)
+
+[node name="Coins2" type="Node2D" parent="."]
+
+[node name="Coin" parent="Coins2" instance=ExtResource("7_ueomv")]
+position = Vector2(640, 504)
+
+[node name="Coin2" parent="Coins2" instance=ExtResource("7_ueomv")]
+position = Vector2(653, 504)
+
+[node name="Coin3" parent="Coins2" instance=ExtResource("7_ueomv")]
+position = Vector2(666, 504)
+
+[node name="Coin4" parent="Coins2" instance=ExtResource("7_ueomv")]
+position = Vector2(679, 504)
+
+[node name="Coin7" parent="Coins2" instance=ExtResource("7_ueomv")]
+position = Vector2(693, 504)
+
+[node name="Coin8" parent="Coins2" instance=ExtResource("7_ueomv")]
+position = Vector2(706, 504)
+
+[node name="Coin6" parent="Coins2" instance=ExtResource("7_ueomv")]
+position = Vector2(717, 504)
+
+[node name="Coin9" parent="Coins2" instance=ExtResource("7_ueomv")]
+position = Vector2(730, 504)
+
+[node name="Coin10" parent="Coins2" instance=ExtResource("7_ueomv")]
+position = Vector2(743, 504)
+
+[node name="Coin11" parent="Coins2" instance=ExtResource("7_ueomv")]
+position = Vector2(757, 504)
+
+[node name="Coin12" parent="Coins2" instance=ExtResource("7_ueomv")]
+position = Vector2(770, 504)
+
+[node name="Coin13" parent="Coins2" instance=ExtResource("7_ueomv")]
+position = Vector2(781, 504)
+
+[node name="Coin14" parent="Coins2" instance=ExtResource("7_ueomv")]
+position = Vector2(794, 504)
+
+[node name="Coin15" parent="Coins2" instance=ExtResource("7_ueomv")]
+position = Vector2(807, 504)
+
+[node name="Coin16" parent="Coins2" instance=ExtResource("7_ueomv")]
+position = Vector2(821, 504)
+
+[node name="Coin17" parent="Coins2" instance=ExtResource("7_ueomv")]
+position = Vector2(834, 504)
+
+[node name="Coin18" parent="Coins2" instance=ExtResource("7_ueomv")]
+position = Vector2(845, 504)
+
+[node name="Coin19" parent="Coins2" instance=ExtResource("7_ueomv")]
+position = Vector2(858, 504)
+
+[node name="Coin20" parent="Coins2" instance=ExtResource("7_ueomv")]
+position = Vector2(871, 504)
+
+[node name="Coin21" parent="Coins2" instance=ExtResource("7_ueomv")]
+position = Vector2(885, 504)
+
+[node name="Coin22" parent="Coins2" instance=ExtResource("7_ueomv")]
+position = Vector2(898, 504)
+
+[node name="Coins3" type="Node2D" parent="."]
+position = Vector2(272, 0)
+
+[node name="Coin" parent="Coins3" instance=ExtResource("7_ueomv")]
+position = Vector2(640, 504)
+
+[node name="Coin2" parent="Coins3" instance=ExtResource("7_ueomv")]
+position = Vector2(653, 504)
+
+[node name="Coin3" parent="Coins3" instance=ExtResource("7_ueomv")]
+position = Vector2(666, 504)
+
+[node name="Coin4" parent="Coins3" instance=ExtResource("7_ueomv")]
+position = Vector2(679, 504)
+
+[node name="Coin7" parent="Coins3" instance=ExtResource("7_ueomv")]
+position = Vector2(693, 504)
+
+[node name="Coin8" parent="Coins3" instance=ExtResource("7_ueomv")]
+position = Vector2(706, 504)
+
+[node name="Coin6" parent="Coins3" instance=ExtResource("7_ueomv")]
+position = Vector2(717, 504)
+
+[node name="Coin9" parent="Coins3" instance=ExtResource("7_ueomv")]
+position = Vector2(730, 504)
+
+[node name="Coin10" parent="Coins3" instance=ExtResource("7_ueomv")]
+position = Vector2(743, 504)
+
+[node name="Coin11" parent="Coins3" instance=ExtResource("7_ueomv")]
+position = Vector2(757, 504)
+
+[node name="Coins4" type="Node2D" parent="."]
+position = Vector2(0, -24)
+
+[node name="Coin" parent="Coins4" instance=ExtResource("7_ueomv")]
+position = Vector2(368, 504)
+
+[node name="Coin2" parent="Coins4" instance=ExtResource("7_ueomv")]
+position = Vector2(381, 504)
+
+[node name="Coin3" parent="Coins4" instance=ExtResource("7_ueomv")]
+position = Vector2(394, 504)
+
+[node name="Coin4" parent="Coins4" instance=ExtResource("7_ueomv")]
+position = Vector2(407, 504)
+
+[node name="Coin7" parent="Coins4" instance=ExtResource("7_ueomv")]
+position = Vector2(421, 504)
+
+[node name="Coin8" parent="Coins4" instance=ExtResource("7_ueomv")]
+position = Vector2(434, 504)
+
+[node name="Coin6" parent="Coins4" instance=ExtResource("7_ueomv")]
+position = Vector2(445, 504)
+
+[node name="Coin9" parent="Coins4" instance=ExtResource("7_ueomv")]
+position = Vector2(458, 504)
+
+[node name="Coin10" parent="Coins4" instance=ExtResource("7_ueomv")]
+position = Vector2(471, 504)
+
+[node name="Coin11" parent="Coins4" instance=ExtResource("7_ueomv")]
+position = Vector2(485, 504)
+
+[node name="Coin12" parent="Coins4" instance=ExtResource("7_ueomv")]
+position = Vector2(498, 504)
+
+[node name="Coin13" parent="Coins4" instance=ExtResource("7_ueomv")]
+position = Vector2(509, 504)
+
+[node name="Coin14" parent="Coins4" instance=ExtResource("7_ueomv")]
+position = Vector2(522, 504)
+
+[node name="Coin15" parent="Coins4" instance=ExtResource("7_ueomv")]
+position = Vector2(535, 504)
+
+[node name="Coin16" parent="Coins4" instance=ExtResource("7_ueomv")]
+position = Vector2(549, 504)
+
+[node name="Coin17" parent="Coins4" instance=ExtResource("7_ueomv")]
+position = Vector2(562, 504)
+
+[node name="Coin18" parent="Coins4" instance=ExtResource("7_ueomv")]
+position = Vector2(573, 504)
+
+[node name="Coin19" parent="Coins4" instance=ExtResource("7_ueomv")]
+position = Vector2(586, 504)
+
+[node name="Coin20" parent="Coins4" instance=ExtResource("7_ueomv")]
+position = Vector2(599, 504)
+
+[node name="Coin21" parent="Coins4" instance=ExtResource("7_ueomv")]
+position = Vector2(613, 504)
+
+[node name="Coin22" parent="Coins4" instance=ExtResource("7_ueomv")]
+position = Vector2(626, 504)
+
+[node name="Coins5" type="Node2D" parent="."]
+position = Vector2(0, -24)
+
+[node name="Coin" parent="Coins5" instance=ExtResource("7_ueomv")]
+position = Vector2(640, 504)
+
+[node name="Coin2" parent="Coins5" instance=ExtResource("7_ueomv")]
+position = Vector2(653, 504)
+
+[node name="Coin3" parent="Coins5" instance=ExtResource("7_ueomv")]
+position = Vector2(666, 504)
+
+[node name="Coin4" parent="Coins5" instance=ExtResource("7_ueomv")]
+position = Vector2(679, 504)
+
+[node name="Coin7" parent="Coins5" instance=ExtResource("7_ueomv")]
+position = Vector2(693, 504)
+
+[node name="Coin8" parent="Coins5" instance=ExtResource("7_ueomv")]
+position = Vector2(706, 504)
+
+[node name="Coin6" parent="Coins5" instance=ExtResource("7_ueomv")]
+position = Vector2(717, 504)
+
+[node name="Coin9" parent="Coins5" instance=ExtResource("7_ueomv")]
+position = Vector2(730, 504)
+
+[node name="Coin10" parent="Coins5" instance=ExtResource("7_ueomv")]
+position = Vector2(743, 504)
+
+[node name="Coin11" parent="Coins5" instance=ExtResource("7_ueomv")]
+position = Vector2(757, 504)
+
+[node name="Coin12" parent="Coins5" instance=ExtResource("7_ueomv")]
+position = Vector2(770, 504)
+
+[node name="Coin13" parent="Coins5" instance=ExtResource("7_ueomv")]
+position = Vector2(781, 504)
+
+[node name="Coin14" parent="Coins5" instance=ExtResource("7_ueomv")]
+position = Vector2(794, 504)
+
+[node name="Coin15" parent="Coins5" instance=ExtResource("7_ueomv")]
+position = Vector2(807, 504)
+
+[node name="Coin16" parent="Coins5" instance=ExtResource("7_ueomv")]
+position = Vector2(821, 504)
+
+[node name="Coin17" parent="Coins5" instance=ExtResource("7_ueomv")]
+position = Vector2(834, 504)
+
+[node name="Coin18" parent="Coins5" instance=ExtResource("7_ueomv")]
+position = Vector2(845, 504)
+
+[node name="Coin19" parent="Coins5" instance=ExtResource("7_ueomv")]
+position = Vector2(858, 504)
+
+[node name="Coin20" parent="Coins5" instance=ExtResource("7_ueomv")]
+position = Vector2(871, 504)
+
+[node name="Coin21" parent="Coins5" instance=ExtResource("7_ueomv")]
+position = Vector2(885, 504)
+
+[node name="Coin22" parent="Coins5" instance=ExtResource("7_ueomv")]
+position = Vector2(898, 504)
+
+[node name="Coins6" type="Node2D" parent="."]
+position = Vector2(272, -24)
+
+[node name="Coin" parent="Coins6" instance=ExtResource("7_ueomv")]
+position = Vector2(640, 504)
+
+[node name="Coin2" parent="Coins6" instance=ExtResource("7_ueomv")]
+position = Vector2(653, 504)
+
+[node name="Coin3" parent="Coins6" instance=ExtResource("7_ueomv")]
+position = Vector2(666, 504)
+
+[node name="Coin4" parent="Coins6" instance=ExtResource("7_ueomv")]
+position = Vector2(679, 504)
+
+[node name="Coin7" parent="Coins6" instance=ExtResource("7_ueomv")]
+position = Vector2(693, 504)
+
+[node name="Coin8" parent="Coins6" instance=ExtResource("7_ueomv")]
+position = Vector2(706, 504)
+
+[node name="Coin6" parent="Coins6" instance=ExtResource("7_ueomv")]
+position = Vector2(717, 504)
+
+[node name="Coin9" parent="Coins6" instance=ExtResource("7_ueomv")]
+position = Vector2(730, 504)
+
+[node name="Coin10" parent="Coins6" instance=ExtResource("7_ueomv")]
+position = Vector2(743, 504)
+
+[node name="Coin11" parent="Coins6" instance=ExtResource("7_ueomv")]
+position = Vector2(757, 504)
+
+[node name="Coins7" type="Node2D" parent="."]
+position = Vector2(0, -48)
+
+[node name="Coin" parent="Coins7" instance=ExtResource("7_ueomv")]
+position = Vector2(368, 504)
+
+[node name="Coin2" parent="Coins7" instance=ExtResource("7_ueomv")]
+position = Vector2(381, 504)
+
+[node name="Coin3" parent="Coins7" instance=ExtResource("7_ueomv")]
+position = Vector2(394, 504)
+
+[node name="Coin4" parent="Coins7" instance=ExtResource("7_ueomv")]
+position = Vector2(407, 504)
+
+[node name="Coin7" parent="Coins7" instance=ExtResource("7_ueomv")]
+position = Vector2(421, 504)
+
+[node name="Coin8" parent="Coins7" instance=ExtResource("7_ueomv")]
+position = Vector2(434, 504)
+
+[node name="Coin6" parent="Coins7" instance=ExtResource("7_ueomv")]
+position = Vector2(445, 504)
+
+[node name="Coin9" parent="Coins7" instance=ExtResource("7_ueomv")]
+position = Vector2(458, 504)
+
+[node name="Coin10" parent="Coins7" instance=ExtResource("7_ueomv")]
+position = Vector2(471, 504)
+
+[node name="Coin11" parent="Coins7" instance=ExtResource("7_ueomv")]
+position = Vector2(485, 504)
+
+[node name="Coin12" parent="Coins7" instance=ExtResource("7_ueomv")]
+position = Vector2(498, 504)
+
+[node name="Coin13" parent="Coins7" instance=ExtResource("7_ueomv")]
+position = Vector2(509, 504)
+
+[node name="Coin14" parent="Coins7" instance=ExtResource("7_ueomv")]
+position = Vector2(522, 504)
+
+[node name="Coin15" parent="Coins7" instance=ExtResource("7_ueomv")]
+position = Vector2(535, 504)
+
+[node name="Coin16" parent="Coins7" instance=ExtResource("7_ueomv")]
+position = Vector2(549, 504)
+
+[node name="Coin17" parent="Coins7" instance=ExtResource("7_ueomv")]
+position = Vector2(562, 504)
+
+[node name="Coin18" parent="Coins7" instance=ExtResource("7_ueomv")]
+position = Vector2(573, 504)
+
+[node name="Coin19" parent="Coins7" instance=ExtResource("7_ueomv")]
+position = Vector2(586, 504)
+
+[node name="Coin20" parent="Coins7" instance=ExtResource("7_ueomv")]
+position = Vector2(599, 504)
+
+[node name="Coin21" parent="Coins7" instance=ExtResource("7_ueomv")]
+position = Vector2(613, 504)
+
+[node name="Coin22" parent="Coins7" instance=ExtResource("7_ueomv")]
+position = Vector2(626, 504)
+
+[node name="Coins8" type="Node2D" parent="."]
+position = Vector2(0, -48)
+
+[node name="Coin" parent="Coins8" instance=ExtResource("7_ueomv")]
+position = Vector2(640, 504)
+
+[node name="Coin2" parent="Coins8" instance=ExtResource("7_ueomv")]
+position = Vector2(653, 504)
+
+[node name="Coin3" parent="Coins8" instance=ExtResource("7_ueomv")]
+position = Vector2(666, 504)
+
+[node name="Coin4" parent="Coins8" instance=ExtResource("7_ueomv")]
+position = Vector2(679, 504)
+
+[node name="Coin7" parent="Coins8" instance=ExtResource("7_ueomv")]
+position = Vector2(693, 504)
+
+[node name="Coin8" parent="Coins8" instance=ExtResource("7_ueomv")]
+position = Vector2(706, 504)
+
+[node name="Coin6" parent="Coins8" instance=ExtResource("7_ueomv")]
+position = Vector2(717, 504)
+
+[node name="Coin9" parent="Coins8" instance=ExtResource("7_ueomv")]
+position = Vector2(730, 504)
+
+[node name="Coin10" parent="Coins8" instance=ExtResource("7_ueomv")]
+position = Vector2(743, 504)
+
+[node name="Coin11" parent="Coins8" instance=ExtResource("7_ueomv")]
+position = Vector2(757, 504)
+
+[node name="Coin12" parent="Coins8" instance=ExtResource("7_ueomv")]
+position = Vector2(770, 504)
+
+[node name="Coin13" parent="Coins8" instance=ExtResource("7_ueomv")]
+position = Vector2(781, 504)
+
+[node name="Coin14" parent="Coins8" instance=ExtResource("7_ueomv")]
+position = Vector2(794, 504)
+
+[node name="Coin15" parent="Coins8" instance=ExtResource("7_ueomv")]
+position = Vector2(807, 504)
+
+[node name="Coin16" parent="Coins8" instance=ExtResource("7_ueomv")]
+position = Vector2(821, 504)
+
+[node name="Coin17" parent="Coins8" instance=ExtResource("7_ueomv")]
+position = Vector2(834, 504)
+
+[node name="Coin18" parent="Coins8" instance=ExtResource("7_ueomv")]
+position = Vector2(845, 504)
+
+[node name="Coin19" parent="Coins8" instance=ExtResource("7_ueomv")]
+position = Vector2(858, 504)
+
+[node name="Coin20" parent="Coins8" instance=ExtResource("7_ueomv")]
+position = Vector2(871, 504)
+
+[node name="Coin21" parent="Coins8" instance=ExtResource("7_ueomv")]
+position = Vector2(885, 504)
+
+[node name="Coin22" parent="Coins8" instance=ExtResource("7_ueomv")]
+position = Vector2(898, 504)
+
+[node name="Coins9" type="Node2D" parent="."]
+position = Vector2(272, -48)
+
+[node name="Coin" parent="Coins9" instance=ExtResource("7_ueomv")]
+position = Vector2(640, 504)
+
+[node name="Coin2" parent="Coins9" instance=ExtResource("7_ueomv")]
+position = Vector2(653, 504)
+
+[node name="Coin3" parent="Coins9" instance=ExtResource("7_ueomv")]
+position = Vector2(666, 504)
+
+[node name="Coin4" parent="Coins9" instance=ExtResource("7_ueomv")]
+position = Vector2(679, 504)
+
+[node name="Coin7" parent="Coins9" instance=ExtResource("7_ueomv")]
+position = Vector2(693, 504)
+
+[node name="Coin8" parent="Coins9" instance=ExtResource("7_ueomv")]
+position = Vector2(706, 504)
+
+[node name="Coin6" parent="Coins9" instance=ExtResource("7_ueomv")]
+position = Vector2(717, 504)
+
+[node name="Coin9" parent="Coins9" instance=ExtResource("7_ueomv")]
+position = Vector2(730, 504)
+
+[node name="Coin10" parent="Coins9" instance=ExtResource("7_ueomv")]
+position = Vector2(743, 504)
+
+[node name="Coin11" parent="Coins9" instance=ExtResource("7_ueomv")]
+position = Vector2(757, 504)
+
+[node name="Coins10" type="Node2D" parent="."]
+position = Vector2(0, -72)
+
+[node name="Coin" parent="Coins10" instance=ExtResource("7_ueomv")]
+position = Vector2(368, 504)
+
+[node name="Coin2" parent="Coins10" instance=ExtResource("7_ueomv")]
+position = Vector2(381, 504)
+
+[node name="Coin3" parent="Coins10" instance=ExtResource("7_ueomv")]
+position = Vector2(394, 504)
+
+[node name="Coin4" parent="Coins10" instance=ExtResource("7_ueomv")]
+position = Vector2(407, 504)
+
+[node name="Coin7" parent="Coins10" instance=ExtResource("7_ueomv")]
+position = Vector2(421, 504)
+
+[node name="Coin8" parent="Coins10" instance=ExtResource("7_ueomv")]
+position = Vector2(434, 504)
+
+[node name="Coin6" parent="Coins10" instance=ExtResource("7_ueomv")]
+position = Vector2(445, 504)
+
+[node name="Coin9" parent="Coins10" instance=ExtResource("7_ueomv")]
+position = Vector2(458, 504)
+
+[node name="Coin10" parent="Coins10" instance=ExtResource("7_ueomv")]
+position = Vector2(471, 504)
+
+[node name="Coin11" parent="Coins10" instance=ExtResource("7_ueomv")]
+position = Vector2(485, 504)
+
+[node name="Coin12" parent="Coins10" instance=ExtResource("7_ueomv")]
+position = Vector2(498, 504)
+
+[node name="Coin13" parent="Coins10" instance=ExtResource("7_ueomv")]
+position = Vector2(509, 504)
+
+[node name="Coin14" parent="Coins10" instance=ExtResource("7_ueomv")]
+position = Vector2(522, 504)
+
+[node name="Coin15" parent="Coins10" instance=ExtResource("7_ueomv")]
+position = Vector2(535, 504)
+
+[node name="Coin16" parent="Coins10" instance=ExtResource("7_ueomv")]
+position = Vector2(549, 504)
+
+[node name="Coin17" parent="Coins10" instance=ExtResource("7_ueomv")]
+position = Vector2(562, 504)
+
+[node name="Coin18" parent="Coins10" instance=ExtResource("7_ueomv")]
+position = Vector2(573, 504)
+
+[node name="Coin19" parent="Coins10" instance=ExtResource("7_ueomv")]
+position = Vector2(586, 504)
+
+[node name="Coin20" parent="Coins10" instance=ExtResource("7_ueomv")]
+position = Vector2(599, 504)
+
+[node name="Coin21" parent="Coins10" instance=ExtResource("7_ueomv")]
+position = Vector2(613, 504)
+
+[node name="Coin22" parent="Coins10" instance=ExtResource("7_ueomv")]
+position = Vector2(626, 504)
+
+[node name="Coins11" type="Node2D" parent="."]
+position = Vector2(0, -72)
+
+[node name="Coin" parent="Coins11" instance=ExtResource("7_ueomv")]
+position = Vector2(640, 504)
+
+[node name="Coin2" parent="Coins11" instance=ExtResource("7_ueomv")]
+position = Vector2(653, 504)
+
+[node name="Coin3" parent="Coins11" instance=ExtResource("7_ueomv")]
+position = Vector2(666, 504)
+
+[node name="Coin4" parent="Coins11" instance=ExtResource("7_ueomv")]
+position = Vector2(679, 504)
+
+[node name="Coin7" parent="Coins11" instance=ExtResource("7_ueomv")]
+position = Vector2(693, 504)
+
+[node name="Coin8" parent="Coins11" instance=ExtResource("7_ueomv")]
+position = Vector2(706, 504)
+
+[node name="Coin6" parent="Coins11" instance=ExtResource("7_ueomv")]
+position = Vector2(717, 504)
+
+[node name="Coin9" parent="Coins11" instance=ExtResource("7_ueomv")]
+position = Vector2(730, 504)
+
+[node name="Coin10" parent="Coins11" instance=ExtResource("7_ueomv")]
+position = Vector2(743, 504)
+
+[node name="Coin11" parent="Coins11" instance=ExtResource("7_ueomv")]
+position = Vector2(757, 504)
+
+[node name="Coin12" parent="Coins11" instance=ExtResource("7_ueomv")]
+position = Vector2(770, 504)
+
+[node name="Coin13" parent="Coins11" instance=ExtResource("7_ueomv")]
+position = Vector2(781, 504)
+
+[node name="Coin14" parent="Coins11" instance=ExtResource("7_ueomv")]
+position = Vector2(794, 504)
+
+[node name="Coin15" parent="Coins11" instance=ExtResource("7_ueomv")]
+position = Vector2(807, 504)
+
+[node name="Coin16" parent="Coins11" instance=ExtResource("7_ueomv")]
+position = Vector2(821, 504)
+
+[node name="Coin17" parent="Coins11" instance=ExtResource("7_ueomv")]
+position = Vector2(834, 504)
+
+[node name="Coin18" parent="Coins11" instance=ExtResource("7_ueomv")]
+position = Vector2(845, 504)
+
+[node name="Coin19" parent="Coins11" instance=ExtResource("7_ueomv")]
+position = Vector2(858, 504)
+
+[node name="Coin20" parent="Coins11" instance=ExtResource("7_ueomv")]
+position = Vector2(871, 504)
+
+[node name="Coin21" parent="Coins11" instance=ExtResource("7_ueomv")]
+position = Vector2(885, 504)
+
+[node name="Coin22" parent="Coins11" instance=ExtResource("7_ueomv")]
+position = Vector2(898, 504)
+
+[node name="Coins12" type="Node2D" parent="."]
+position = Vector2(272, -72)
+
+[node name="Coin" parent="Coins12" instance=ExtResource("7_ueomv")]
+position = Vector2(640, 504)
+
+[node name="Coin2" parent="Coins12" instance=ExtResource("7_ueomv")]
+position = Vector2(653, 504)
+
+[node name="Coin3" parent="Coins12" instance=ExtResource("7_ueomv")]
+position = Vector2(666, 504)
+
+[node name="Coin4" parent="Coins12" instance=ExtResource("7_ueomv")]
+position = Vector2(679, 504)
+
+[node name="Coin7" parent="Coins12" instance=ExtResource("7_ueomv")]
+position = Vector2(693, 504)
+
+[node name="Coin8" parent="Coins12" instance=ExtResource("7_ueomv")]
+position = Vector2(706, 504)
+
+[node name="Coin6" parent="Coins12" instance=ExtResource("7_ueomv")]
+position = Vector2(717, 504)
+
+[node name="Coin9" parent="Coins12" instance=ExtResource("7_ueomv")]
+position = Vector2(730, 504)
+
+[node name="Coin10" parent="Coins12" instance=ExtResource("7_ueomv")]
+position = Vector2(743, 504)
+
+[node name="Coin11" parent="Coins12" instance=ExtResource("7_ueomv")]
+position = Vector2(757, 504)
+
+[node name="Coins13" type="Node2D" parent="."]
+position = Vector2(0, -96)
+
+[node name="Coin" parent="Coins13" instance=ExtResource("7_ueomv")]
+position = Vector2(368, 504)
+
+[node name="Coin2" parent="Coins13" instance=ExtResource("7_ueomv")]
+position = Vector2(381, 504)
+
+[node name="Coin3" parent="Coins13" instance=ExtResource("7_ueomv")]
+position = Vector2(394, 504)
+
+[node name="Coin4" parent="Coins13" instance=ExtResource("7_ueomv")]
+position = Vector2(407, 504)
+
+[node name="Coin7" parent="Coins13" instance=ExtResource("7_ueomv")]
+position = Vector2(421, 504)
+
+[node name="Coin8" parent="Coins13" instance=ExtResource("7_ueomv")]
+position = Vector2(434, 504)
+
+[node name="Coin6" parent="Coins13" instance=ExtResource("7_ueomv")]
+position = Vector2(445, 504)
+
+[node name="Coin9" parent="Coins13" instance=ExtResource("7_ueomv")]
+position = Vector2(458, 504)
+
+[node name="Coin10" parent="Coins13" instance=ExtResource("7_ueomv")]
+position = Vector2(471, 504)
+
+[node name="Coin11" parent="Coins13" instance=ExtResource("7_ueomv")]
+position = Vector2(485, 504)
+
+[node name="Coin12" parent="Coins13" instance=ExtResource("7_ueomv")]
+position = Vector2(498, 504)
+
+[node name="Coin13" parent="Coins13" instance=ExtResource("7_ueomv")]
+position = Vector2(509, 504)
+
+[node name="Coin14" parent="Coins13" instance=ExtResource("7_ueomv")]
+position = Vector2(522, 504)
+
+[node name="Coin15" parent="Coins13" instance=ExtResource("7_ueomv")]
+position = Vector2(535, 504)
+
+[node name="Coin16" parent="Coins13" instance=ExtResource("7_ueomv")]
+position = Vector2(549, 504)
+
+[node name="Coin17" parent="Coins13" instance=ExtResource("7_ueomv")]
+position = Vector2(562, 504)
+
+[node name="Coin18" parent="Coins13" instance=ExtResource("7_ueomv")]
+position = Vector2(573, 504)
+
+[node name="Coin19" parent="Coins13" instance=ExtResource("7_ueomv")]
+position = Vector2(586, 504)
+
+[node name="Coin20" parent="Coins13" instance=ExtResource("7_ueomv")]
+position = Vector2(599, 504)
+
+[node name="Coin21" parent="Coins13" instance=ExtResource("7_ueomv")]
+position = Vector2(613, 504)
+
+[node name="Coin22" parent="Coins13" instance=ExtResource("7_ueomv")]
+position = Vector2(626, 504)
+
+[node name="Coins14" type="Node2D" parent="."]
+position = Vector2(0, -96)
+
+[node name="Coin" parent="Coins14" instance=ExtResource("7_ueomv")]
+position = Vector2(640, 504)
+
+[node name="Coin2" parent="Coins14" instance=ExtResource("7_ueomv")]
+position = Vector2(653, 504)
+
+[node name="Coin3" parent="Coins14" instance=ExtResource("7_ueomv")]
+position = Vector2(666, 504)
+
+[node name="Coin4" parent="Coins14" instance=ExtResource("7_ueomv")]
+position = Vector2(679, 504)
+
+[node name="Coin7" parent="Coins14" instance=ExtResource("7_ueomv")]
+position = Vector2(693, 504)
+
+[node name="Coin8" parent="Coins14" instance=ExtResource("7_ueomv")]
+position = Vector2(706, 504)
+
+[node name="Coin6" parent="Coins14" instance=ExtResource("7_ueomv")]
+position = Vector2(717, 504)
+
+[node name="Coin9" parent="Coins14" instance=ExtResource("7_ueomv")]
+position = Vector2(730, 504)
+
+[node name="Coin10" parent="Coins14" instance=ExtResource("7_ueomv")]
+position = Vector2(743, 504)
+
+[node name="Coin11" parent="Coins14" instance=ExtResource("7_ueomv")]
+position = Vector2(757, 504)
+
+[node name="Coin12" parent="Coins14" instance=ExtResource("7_ueomv")]
+position = Vector2(770, 504)
+
+[node name="Coin13" parent="Coins14" instance=ExtResource("7_ueomv")]
+position = Vector2(781, 504)
+
+[node name="Coin14" parent="Coins14" instance=ExtResource("7_ueomv")]
+position = Vector2(794, 504)
+
+[node name="Coin15" parent="Coins14" instance=ExtResource("7_ueomv")]
+position = Vector2(807, 504)
+
+[node name="Coin16" parent="Coins14" instance=ExtResource("7_ueomv")]
+position = Vector2(821, 504)
+
+[node name="Coin17" parent="Coins14" instance=ExtResource("7_ueomv")]
+position = Vector2(834, 504)
+
+[node name="Coin18" parent="Coins14" instance=ExtResource("7_ueomv")]
+position = Vector2(845, 504)
+
+[node name="Coin19" parent="Coins14" instance=ExtResource("7_ueomv")]
+position = Vector2(858, 504)
+
+[node name="Coin20" parent="Coins14" instance=ExtResource("7_ueomv")]
+position = Vector2(871, 504)
+
+[node name="Coin21" parent="Coins14" instance=ExtResource("7_ueomv")]
+position = Vector2(885, 504)
+
+[node name="Coin22" parent="Coins14" instance=ExtResource("7_ueomv")]
+position = Vector2(898, 504)
+
+[node name="Coins15" type="Node2D" parent="."]
+position = Vector2(272, -96)
+
+[node name="Coin" parent="Coins15" instance=ExtResource("7_ueomv")]
+position = Vector2(640, 504)
+
+[node name="Coin2" parent="Coins15" instance=ExtResource("7_ueomv")]
+position = Vector2(653, 504)
+
+[node name="Coin3" parent="Coins15" instance=ExtResource("7_ueomv")]
+position = Vector2(666, 504)
+
+[node name="Coin4" parent="Coins15" instance=ExtResource("7_ueomv")]
+position = Vector2(679, 504)
+
+[node name="Coin7" parent="Coins15" instance=ExtResource("7_ueomv")]
+position = Vector2(693, 504)
+
+[node name="Coin8" parent="Coins15" instance=ExtResource("7_ueomv")]
+position = Vector2(706, 504)
+
+[node name="Coin6" parent="Coins15" instance=ExtResource("7_ueomv")]
+position = Vector2(717, 504)
+
+[node name="Coin9" parent="Coins15" instance=ExtResource("7_ueomv")]
+position = Vector2(730, 504)
+
+[node name="Coin10" parent="Coins15" instance=ExtResource("7_ueomv")]
+position = Vector2(743, 504)
+
+[node name="Coin11" parent="Coins15" instance=ExtResource("7_ueomv")]
+position = Vector2(757, 504)
+
+[node name="Coins16" type="Node2D" parent="."]
+position = Vector2(0, -120)
+
+[node name="Coin" parent="Coins16" instance=ExtResource("7_ueomv")]
+position = Vector2(368, 504)
+
+[node name="Coin2" parent="Coins16" instance=ExtResource("7_ueomv")]
+position = Vector2(381, 504)
+
+[node name="Coin3" parent="Coins16" instance=ExtResource("7_ueomv")]
+position = Vector2(394, 504)
+
+[node name="Coin4" parent="Coins16" instance=ExtResource("7_ueomv")]
+position = Vector2(407, 504)
+
+[node name="Coin7" parent="Coins16" instance=ExtResource("7_ueomv")]
+position = Vector2(421, 504)
+
+[node name="Coin8" parent="Coins16" instance=ExtResource("7_ueomv")]
+position = Vector2(434, 504)
+
+[node name="Coin6" parent="Coins16" instance=ExtResource("7_ueomv")]
+position = Vector2(445, 504)
+
+[node name="Coin9" parent="Coins16" instance=ExtResource("7_ueomv")]
+position = Vector2(458, 504)
+
+[node name="Coin10" parent="Coins16" instance=ExtResource("7_ueomv")]
+position = Vector2(471, 504)
+
+[node name="Coin11" parent="Coins16" instance=ExtResource("7_ueomv")]
+position = Vector2(485, 504)
+
+[node name="Coin12" parent="Coins16" instance=ExtResource("7_ueomv")]
+position = Vector2(498, 504)
+
+[node name="Coin13" parent="Coins16" instance=ExtResource("7_ueomv")]
+position = Vector2(509, 504)
+
+[node name="Coin14" parent="Coins16" instance=ExtResource("7_ueomv")]
+position = Vector2(522, 504)
+
+[node name="Coin15" parent="Coins16" instance=ExtResource("7_ueomv")]
+position = Vector2(535, 504)
+
+[node name="Coin16" parent="Coins16" instance=ExtResource("7_ueomv")]
+position = Vector2(549, 504)
+
+[node name="Coin17" parent="Coins16" instance=ExtResource("7_ueomv")]
+position = Vector2(562, 504)
+
+[node name="Coin18" parent="Coins16" instance=ExtResource("7_ueomv")]
+position = Vector2(573, 504)
+
+[node name="Coin19" parent="Coins16" instance=ExtResource("7_ueomv")]
+position = Vector2(586, 504)
+
+[node name="Coin20" parent="Coins16" instance=ExtResource("7_ueomv")]
+position = Vector2(599, 504)
+
+[node name="Coin21" parent="Coins16" instance=ExtResource("7_ueomv")]
+position = Vector2(613, 504)
+
+[node name="Coin22" parent="Coins16" instance=ExtResource("7_ueomv")]
+position = Vector2(626, 504)
+
+[node name="Coins17" type="Node2D" parent="."]
+position = Vector2(0, -120)
+
+[node name="Coin" parent="Coins17" instance=ExtResource("7_ueomv")]
+position = Vector2(640, 504)
+
+[node name="Coin2" parent="Coins17" instance=ExtResource("7_ueomv")]
+position = Vector2(653, 504)
+
+[node name="Coin3" parent="Coins17" instance=ExtResource("7_ueomv")]
+position = Vector2(666, 504)
+
+[node name="Coin4" parent="Coins17" instance=ExtResource("7_ueomv")]
+position = Vector2(679, 504)
+
+[node name="Coin7" parent="Coins17" instance=ExtResource("7_ueomv")]
+position = Vector2(693, 504)
+
+[node name="Coin8" parent="Coins17" instance=ExtResource("7_ueomv")]
+position = Vector2(706, 504)
+
+[node name="Coin6" parent="Coins17" instance=ExtResource("7_ueomv")]
+position = Vector2(717, 504)
+
+[node name="Coin9" parent="Coins17" instance=ExtResource("7_ueomv")]
+position = Vector2(730, 504)
+
+[node name="Coin10" parent="Coins17" instance=ExtResource("7_ueomv")]
+position = Vector2(743, 504)
+
+[node name="Coin11" parent="Coins17" instance=ExtResource("7_ueomv")]
+position = Vector2(757, 504)
+
+[node name="Coin12" parent="Coins17" instance=ExtResource("7_ueomv")]
+position = Vector2(770, 504)
+
+[node name="Coin13" parent="Coins17" instance=ExtResource("7_ueomv")]
+position = Vector2(781, 504)
+
+[node name="Coin14" parent="Coins17" instance=ExtResource("7_ueomv")]
+position = Vector2(794, 504)
+
+[node name="Coin15" parent="Coins17" instance=ExtResource("7_ueomv")]
+position = Vector2(807, 504)
+
+[node name="Coin16" parent="Coins17" instance=ExtResource("7_ueomv")]
+position = Vector2(821, 504)
+
+[node name="Coin17" parent="Coins17" instance=ExtResource("7_ueomv")]
+position = Vector2(834, 504)
+
+[node name="Coin18" parent="Coins17" instance=ExtResource("7_ueomv")]
+position = Vector2(845, 504)
+
+[node name="Coin19" parent="Coins17" instance=ExtResource("7_ueomv")]
+position = Vector2(858, 504)
+
+[node name="Coin20" parent="Coins17" instance=ExtResource("7_ueomv")]
+position = Vector2(871, 504)
+
+[node name="Coin21" parent="Coins17" instance=ExtResource("7_ueomv")]
+position = Vector2(885, 504)
+
+[node name="Coin22" parent="Coins17" instance=ExtResource("7_ueomv")]
+position = Vector2(898, 504)
+
+[node name="Coins18" type="Node2D" parent="."]
+position = Vector2(272, -120)
+
+[node name="Coin" parent="Coins18" instance=ExtResource("7_ueomv")]
+position = Vector2(640, 504)
+
+[node name="Coin2" parent="Coins18" instance=ExtResource("7_ueomv")]
+position = Vector2(653, 504)
+
+[node name="Coin3" parent="Coins18" instance=ExtResource("7_ueomv")]
+position = Vector2(666, 504)
+
+[node name="Coin4" parent="Coins18" instance=ExtResource("7_ueomv")]
+position = Vector2(679, 504)
+
+[node name="Coin7" parent="Coins18" instance=ExtResource("7_ueomv")]
+position = Vector2(693, 504)
+
+[node name="Coin8" parent="Coins18" instance=ExtResource("7_ueomv")]
+position = Vector2(706, 504)
+
+[node name="Coin6" parent="Coins18" instance=ExtResource("7_ueomv")]
+position = Vector2(717, 504)
+
+[node name="Coin9" parent="Coins18" instance=ExtResource("7_ueomv")]
+position = Vector2(730, 504)
+
+[node name="Coin10" parent="Coins18" instance=ExtResource("7_ueomv")]
+position = Vector2(743, 504)
+
+[node name="Coin11" parent="Coins18" instance=ExtResource("7_ueomv")]
+position = Vector2(757, 504)
+
+[node name="Coins19" type="Node2D" parent="."]
+position = Vector2(0, -144)
+
+[node name="Coin" parent="Coins19" instance=ExtResource("7_ueomv")]
+position = Vector2(368, 504)
+
+[node name="Coin2" parent="Coins19" instance=ExtResource("7_ueomv")]
+position = Vector2(381, 504)
+
+[node name="Coin3" parent="Coins19" instance=ExtResource("7_ueomv")]
+position = Vector2(394, 504)
+
+[node name="Coin4" parent="Coins19" instance=ExtResource("7_ueomv")]
+position = Vector2(407, 504)
+
+[node name="Coin7" parent="Coins19" instance=ExtResource("7_ueomv")]
+position = Vector2(421, 504)
+
+[node name="Coin8" parent="Coins19" instance=ExtResource("7_ueomv")]
+position = Vector2(434, 504)
+
+[node name="Coin6" parent="Coins19" instance=ExtResource("7_ueomv")]
+position = Vector2(445, 504)
+
+[node name="Coin9" parent="Coins19" instance=ExtResource("7_ueomv")]
+position = Vector2(458, 504)
+
+[node name="Coin10" parent="Coins19" instance=ExtResource("7_ueomv")]
+position = Vector2(471, 504)
+
+[node name="Coin11" parent="Coins19" instance=ExtResource("7_ueomv")]
+position = Vector2(485, 504)
+
+[node name="Coin12" parent="Coins19" instance=ExtResource("7_ueomv")]
+position = Vector2(498, 504)
+
+[node name="Coin13" parent="Coins19" instance=ExtResource("7_ueomv")]
+position = Vector2(509, 504)
+
+[node name="Coin14" parent="Coins19" instance=ExtResource("7_ueomv")]
+position = Vector2(522, 504)
+
+[node name="Coin15" parent="Coins19" instance=ExtResource("7_ueomv")]
+position = Vector2(535, 504)
+
+[node name="Coin16" parent="Coins19" instance=ExtResource("7_ueomv")]
+position = Vector2(549, 504)
+
+[node name="Coin17" parent="Coins19" instance=ExtResource("7_ueomv")]
+position = Vector2(562, 504)
+
+[node name="Coin18" parent="Coins19" instance=ExtResource("7_ueomv")]
+position = Vector2(573, 504)
+
+[node name="Coin19" parent="Coins19" instance=ExtResource("7_ueomv")]
+position = Vector2(586, 504)
+
+[node name="Coin20" parent="Coins19" instance=ExtResource("7_ueomv")]
+position = Vector2(599, 504)
+
+[node name="Coin21" parent="Coins19" instance=ExtResource("7_ueomv")]
+position = Vector2(613, 504)
+
+[node name="Coin22" parent="Coins19" instance=ExtResource("7_ueomv")]
+position = Vector2(626, 504)
+
+[node name="Coins20" type="Node2D" parent="."]
+position = Vector2(0, -144)
+
+[node name="Coin" parent="Coins20" instance=ExtResource("7_ueomv")]
+position = Vector2(640, 504)
+
+[node name="Coin2" parent="Coins20" instance=ExtResource("7_ueomv")]
+position = Vector2(653, 504)
+
+[node name="Coin3" parent="Coins20" instance=ExtResource("7_ueomv")]
+position = Vector2(666, 504)
+
+[node name="Coin4" parent="Coins20" instance=ExtResource("7_ueomv")]
+position = Vector2(679, 504)
+
+[node name="Coin7" parent="Coins20" instance=ExtResource("7_ueomv")]
+position = Vector2(693, 504)
+
+[node name="Coin8" parent="Coins20" instance=ExtResource("7_ueomv")]
+position = Vector2(706, 504)
+
+[node name="Coin6" parent="Coins20" instance=ExtResource("7_ueomv")]
+position = Vector2(717, 504)
+
+[node name="Coin9" parent="Coins20" instance=ExtResource("7_ueomv")]
+position = Vector2(730, 504)
+
+[node name="Coin10" parent="Coins20" instance=ExtResource("7_ueomv")]
+position = Vector2(743, 504)
+
+[node name="Coin11" parent="Coins20" instance=ExtResource("7_ueomv")]
+position = Vector2(757, 504)
+
+[node name="Coin12" parent="Coins20" instance=ExtResource("7_ueomv")]
+position = Vector2(770, 504)
+
+[node name="Coin13" parent="Coins20" instance=ExtResource("7_ueomv")]
+position = Vector2(781, 504)
+
+[node name="Coin14" parent="Coins20" instance=ExtResource("7_ueomv")]
+position = Vector2(794, 504)
+
+[node name="Coin15" parent="Coins20" instance=ExtResource("7_ueomv")]
+position = Vector2(807, 504)
+
+[node name="Coin16" parent="Coins20" instance=ExtResource("7_ueomv")]
+position = Vector2(821, 504)
+
+[node name="Coin17" parent="Coins20" instance=ExtResource("7_ueomv")]
+position = Vector2(834, 504)
+
+[node name="Coin18" parent="Coins20" instance=ExtResource("7_ueomv")]
+position = Vector2(845, 504)
+
+[node name="Coin19" parent="Coins20" instance=ExtResource("7_ueomv")]
+position = Vector2(858, 504)
+
+[node name="Coin20" parent="Coins20" instance=ExtResource("7_ueomv")]
+position = Vector2(871, 504)
+
+[node name="Coin21" parent="Coins20" instance=ExtResource("7_ueomv")]
+position = Vector2(885, 504)
+
+[node name="Coin22" parent="Coins20" instance=ExtResource("7_ueomv")]
+position = Vector2(898, 504)
+
+[node name="Coins21" type="Node2D" parent="."]
+position = Vector2(272, -144)
+
+[node name="Coin" parent="Coins21" instance=ExtResource("7_ueomv")]
+position = Vector2(640, 504)
+
+[node name="Coin2" parent="Coins21" instance=ExtResource("7_ueomv")]
+position = Vector2(653, 504)
+
+[node name="Coin3" parent="Coins21" instance=ExtResource("7_ueomv")]
+position = Vector2(666, 504)
+
+[node name="Coin4" parent="Coins21" instance=ExtResource("7_ueomv")]
+position = Vector2(679, 504)
+
+[node name="Coin7" parent="Coins21" instance=ExtResource("7_ueomv")]
+position = Vector2(693, 504)
+
+[node name="Coin8" parent="Coins21" instance=ExtResource("7_ueomv")]
+position = Vector2(706, 504)
+
+[node name="Coin6" parent="Coins21" instance=ExtResource("7_ueomv")]
+position = Vector2(717, 504)
+
+[node name="Coin9" parent="Coins21" instance=ExtResource("7_ueomv")]
+position = Vector2(730, 504)
+
+[node name="Coin10" parent="Coins21" instance=ExtResource("7_ueomv")]
+position = Vector2(743, 504)
+
+[node name="Coin11" parent="Coins21" instance=ExtResource("7_ueomv")]
+position = Vector2(757, 504)
+
+[node name="Coins22" type="Node2D" parent="."]
+position = Vector2(0, -168)
+
+[node name="Coin" parent="Coins22" instance=ExtResource("7_ueomv")]
+position = Vector2(368, 504)
+
+[node name="Coin2" parent="Coins22" instance=ExtResource("7_ueomv")]
+position = Vector2(381, 504)
+
+[node name="Coin3" parent="Coins22" instance=ExtResource("7_ueomv")]
+position = Vector2(394, 504)
+
+[node name="Coin4" parent="Coins22" instance=ExtResource("7_ueomv")]
+position = Vector2(407, 504)
+
+[node name="Coin7" parent="Coins22" instance=ExtResource("7_ueomv")]
+position = Vector2(421, 504)
+
+[node name="Coin8" parent="Coins22" instance=ExtResource("7_ueomv")]
+position = Vector2(434, 504)
+
+[node name="Coin6" parent="Coins22" instance=ExtResource("7_ueomv")]
+position = Vector2(445, 504)
+
+[node name="Coin9" parent="Coins22" instance=ExtResource("7_ueomv")]
+position = Vector2(458, 504)
+
+[node name="Coin10" parent="Coins22" instance=ExtResource("7_ueomv")]
+position = Vector2(471, 504)
+
+[node name="Coin11" parent="Coins22" instance=ExtResource("7_ueomv")]
+position = Vector2(485, 504)
+
+[node name="Coin12" parent="Coins22" instance=ExtResource("7_ueomv")]
+position = Vector2(498, 504)
+
+[node name="Coin13" parent="Coins22" instance=ExtResource("7_ueomv")]
+position = Vector2(509, 504)
+
+[node name="Coin14" parent="Coins22" instance=ExtResource("7_ueomv")]
+position = Vector2(522, 504)
+
+[node name="Coin15" parent="Coins22" instance=ExtResource("7_ueomv")]
+position = Vector2(535, 504)
+
+[node name="Coin16" parent="Coins22" instance=ExtResource("7_ueomv")]
+position = Vector2(549, 504)
+
+[node name="Coin17" parent="Coins22" instance=ExtResource("7_ueomv")]
+position = Vector2(562, 504)
+
+[node name="Coin18" parent="Coins22" instance=ExtResource("7_ueomv")]
+position = Vector2(573, 504)
+
+[node name="Coin19" parent="Coins22" instance=ExtResource("7_ueomv")]
+position = Vector2(586, 504)
+
+[node name="Coin20" parent="Coins22" instance=ExtResource("7_ueomv")]
+position = Vector2(599, 504)
+
+[node name="Coin21" parent="Coins22" instance=ExtResource("7_ueomv")]
+position = Vector2(613, 504)
+
+[node name="Coin22" parent="Coins22" instance=ExtResource("7_ueomv")]
+position = Vector2(626, 504)
+
+[node name="Coins23" type="Node2D" parent="."]
+position = Vector2(0, -168)
+
+[node name="Coin" parent="Coins23" instance=ExtResource("7_ueomv")]
+position = Vector2(640, 504)
+
+[node name="Coin2" parent="Coins23" instance=ExtResource("7_ueomv")]
+position = Vector2(653, 504)
+
+[node name="Coin3" parent="Coins23" instance=ExtResource("7_ueomv")]
+position = Vector2(666, 504)
+
+[node name="Coin4" parent="Coins23" instance=ExtResource("7_ueomv")]
+position = Vector2(679, 504)
+
+[node name="Coin7" parent="Coins23" instance=ExtResource("7_ueomv")]
+position = Vector2(693, 504)
+
+[node name="Coin8" parent="Coins23" instance=ExtResource("7_ueomv")]
+position = Vector2(706, 504)
+
+[node name="Coin6" parent="Coins23" instance=ExtResource("7_ueomv")]
+position = Vector2(717, 504)
+
+[node name="Coin9" parent="Coins23" instance=ExtResource("7_ueomv")]
+position = Vector2(730, 504)
+
+[node name="Coin10" parent="Coins23" instance=ExtResource("7_ueomv")]
+position = Vector2(743, 504)
+
+[node name="Coin11" parent="Coins23" instance=ExtResource("7_ueomv")]
+position = Vector2(757, 504)
+
+[node name="Coin12" parent="Coins23" instance=ExtResource("7_ueomv")]
+position = Vector2(770, 504)
+
+[node name="Coin13" parent="Coins23" instance=ExtResource("7_ueomv")]
+position = Vector2(781, 504)
+
+[node name="Coin14" parent="Coins23" instance=ExtResource("7_ueomv")]
+position = Vector2(794, 504)
+
+[node name="Coin15" parent="Coins23" instance=ExtResource("7_ueomv")]
+position = Vector2(807, 504)
+
+[node name="Coin16" parent="Coins23" instance=ExtResource("7_ueomv")]
+position = Vector2(821, 504)
+
+[node name="Coin17" parent="Coins23" instance=ExtResource("7_ueomv")]
+position = Vector2(834, 504)
+
+[node name="Coin18" parent="Coins23" instance=ExtResource("7_ueomv")]
+position = Vector2(845, 504)
+
+[node name="Coin19" parent="Coins23" instance=ExtResource("7_ueomv")]
+position = Vector2(858, 504)
+
+[node name="Coin20" parent="Coins23" instance=ExtResource("7_ueomv")]
+position = Vector2(871, 504)
+
+[node name="Coin21" parent="Coins23" instance=ExtResource("7_ueomv")]
+position = Vector2(885, 504)
+
+[node name="Coin22" parent="Coins23" instance=ExtResource("7_ueomv")]
+position = Vector2(898, 504)
+
+[node name="Coins24" type="Node2D" parent="."]
+position = Vector2(272, -168)
+
+[node name="Coin" parent="Coins24" instance=ExtResource("7_ueomv")]
+position = Vector2(640, 504)
+
+[node name="Coin2" parent="Coins24" instance=ExtResource("7_ueomv")]
+position = Vector2(653, 504)
+
+[node name="Coin3" parent="Coins24" instance=ExtResource("7_ueomv")]
+position = Vector2(666, 504)
+
+[node name="Coin4" parent="Coins24" instance=ExtResource("7_ueomv")]
+position = Vector2(679, 504)
+
+[node name="Coin7" parent="Coins24" instance=ExtResource("7_ueomv")]
+position = Vector2(693, 504)
+
+[node name="Coin8" parent="Coins24" instance=ExtResource("7_ueomv")]
+position = Vector2(706, 504)
+
+[node name="Coin6" parent="Coins24" instance=ExtResource("7_ueomv")]
+position = Vector2(717, 504)
+
+[node name="Coin9" parent="Coins24" instance=ExtResource("7_ueomv")]
+position = Vector2(730, 504)
+
+[node name="Coin10" parent="Coins24" instance=ExtResource("7_ueomv")]
+position = Vector2(743, 504)
+
+[node name="Coin11" parent="Coins24" instance=ExtResource("7_ueomv")]
+position = Vector2(757, 504)

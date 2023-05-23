@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bl4ppgbs06ino"
-path="res://.godot/imported/plumber.png-aebc82d716e22f460842e94ea847e4a4.ctex"
+uid="uid://2dhejti3ljxt"
+path="res://.godot/imported/background.png-566e72984ac6a76745d57c0ccd018518.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/plumber.png"
-dest_files=["res://.godot/imported/plumber.png-aebc82d716e22f460842e94ea847e4a4.ctex"]
+source_file="res://Assets/art/background.png"
+dest_files=["res://.godot/imported/background.png-566e72984ac6a76745d57c0ccd018518.ctex"]
 
 [params]
 

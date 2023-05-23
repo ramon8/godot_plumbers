@@ -1,5 +1,6 @@
 extends CharacterBody2D
 
+@onready var jump_audio = get_node("/root/Main/jump")
 
 @export var speed = 175
 @export var start_acceleration = 24
@@ -28,8 +29,10 @@ var down;
 
 var isDead = false;
 var dir = 0;
+var rng = RandomNumberGenerator.new()
 
 func _ready():
+	$Yujus.get_child(rng.randf_range(0, $Yujus.get_child_count())).play()
 	add_to_group("Characters")
 	
 func _physics_process(delta):
@@ -44,7 +47,7 @@ func _physics_process(delta):
 	dir = int(pressing_right) - int(pressing_left)
 	apply_gravity(delta)
 	if not isDead:
-		handle_jump()
+		handle_single_jump()
 		handle_movement()
 		handle_flip_x()
 		handle_animation()
@@ -62,11 +65,17 @@ func apply_gravity(delta):
 			velocity.y += gravity_jump * delta
 
 
-func handle_jump():
-	if is_on_floor():
-		current_jump = 0
-	if up and current_jump < max_jumps:
-		current_jump += 1
+#func handle_jump():
+#	if is_on_floor():
+#		current_jump = 0
+#	if up and current_jump < max_jumps:
+#		current_jump += 1
+#		velocity.y = jump_velocity
+
+func handle_single_jump():
+	if is_on_floor() and up:
+		if not jump_audio.playing:
+			jump_audio.play()
 		velocity.y = jump_velocity
 
 
@@ -111,7 +120,8 @@ func is_positive(value):
 	return value >= 0
 
 func handle_out_of_range():
-	if position.y > 800:
+	if position.y > 1500:
+		$die.play()
 		queue_free()
 
 func kill():

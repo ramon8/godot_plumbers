@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://co8bbrwthb7i2"
+path="res://.godot/imported/mario-bros vida.mp3-df9270d7f23d5ee1eeb309113061ba4d.mp3str"
+
+[deps]
+
+source_file="res://Assets/audio/mario-bros vida.mp3"
+dest_files=["res://.godot/imported/mario-bros vida.mp3-df9270d7f23d5ee1eeb309113061ba4d.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,7 +1,7 @@
-[gd_scene load_steps=9 format=3 uid="uid://dqkgho85kqxha"]
+[gd_scene load_steps=9 format=3]
 
 [ext_resource type="Script" path="res://Objects/button_weight.gd" id="1_m0hlj"]
-[ext_resource type="Texture2D" uid="uid://cxvc074ryr26q" path="res://Assets/button_weight.png" id="2_kg727"]
+[ext_resource type="Texture2D" uid="uid://cxvc074ryr26q" path="res://Assets/art/button_weight.png" id="2_kg727"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_m6hcl"]
 size = Vector2(30, 11)

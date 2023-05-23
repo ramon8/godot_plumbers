@@ -1,12 +1,12 @@
-[gd_scene load_steps=7 format=3 uid="uid://8rq8lhqtrfkk"]
+[gd_scene load_steps=7 format=3 uid="uid://bn2bw6e4npncg"]
 
-[ext_resource type="PackedScene" uid="uid://cgkh0i2fr8lgo" path="res://Objects/plumber.tscn" id="1_gfttm"]
-[ext_resource type="Texture2D" uid="uid://den10luw0yqkt" path="res://Assets/Terrain (16x16).png" id="2_j4t25"]
-[ext_resource type="PackedScene" uid="uid://dfuxp4fix8ow7" path="res://Objects/coin.tscn" id="3_nytcg"]
-[ext_resource type="PackedScene" uid="uid://cvudls5ogjing" path="res://Objects/flag.tscn" id="4_qab8t"]
+[ext_resource type="PackedScene" uid="uid://opp5j4xskb1s" path="res://Objects/plumber.tscn" id="1_gfttm"]
+[ext_resource type="Texture2D" uid="uid://den10luw0yqkt" path="res://Assets/art/Terrain (16x16).png" id="2_gnvct"]
+[ext_resource type="PackedScene" path="res://Objects/coin.tscn" id="3_nytcg"]
+[ext_resource type="PackedScene" path="res://Objects/flag.tscn" id="4_qab8t"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lhsx0"]
-texture = ExtResource("2_j4t25")
+texture = ExtResource("2_gnvct")
 0:0/0 = 0
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:0/0/physics_layer_0/angular_velocity = 0.0

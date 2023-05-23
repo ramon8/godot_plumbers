@@ -4,6 +4,7 @@ extends Area2D
 
 func _on_body_entered(body):
 	if body.name.contains("Character"):
+		$Win.play()
 		get_node("/root/Main/").current_level = next_level
 		var nextLevel = load("res://Scenes/Levels/level_"+ str(next_level) +".tscn").instantiate()
 		get_node("/root/Main/Levels/").add_child(nextLevel)

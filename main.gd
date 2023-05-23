@@ -1,11 +1,15 @@
 #TODO:
+#	-Plumber koyote jump
+#	-properly restart level not the whole main scene
 #	-Gumbas collider must be reworked
 #	-Gumba animation dead
 #	-Gumba animation walk
 #	-Animation on finish level
 #	-Level selector between levels?
+#	-Level transition between levels?
 #	-Green button green wall
 #	-Fire ball enemy
+#	-Splash screen
 
 extends Node2D
 
@@ -17,13 +21,14 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	$Label.set_text("Characters: " + str(get_tree().get_nodes_in_group("Characters").size() - 1))
-	if Input.is_action_just_pressed("reload"):
-		get_tree().reload_current_scene()
+	var characters = get_tree().get_nodes_in_group("Characters").size() - 1
+	$Label.set_text("Characters: " + str(characters))
 	if Input.is_action_just_released("wheel_up"):
 		next_scene()
 	if Input.is_action_just_released("wheel_down"):
 		prev_scene()
+	if characters <= 0 or Input.is_action_just_pressed("reload"):
+		get_tree().reload_current_scene()
 
  
 func _on_dead_zone_body_entered(body):

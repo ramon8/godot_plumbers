@@ -1,8 +1,8 @@
 [gd_scene load_steps=4 format=3 uid="uid://bbttk0ac7rd8l"]
 
-[ext_resource type="PackedScene" uid="uid://e3ofeanof52m" path="res://Objects/tile_map.tscn" id="2_iq418"]
-[ext_resource type="PackedScene" uid="uid://cgkh0i2fr8lgo" path="res://Objects/plumber.tscn" id="3_xomgh"]
-[ext_resource type="PackedScene" uid="uid://cvudls5ogjing" path="res://Objects/flag.tscn" id="4_ggyq5"]
+[ext_resource type="PackedScene" path="res://Objects/tile_map.tscn" id="2_iq418"]
+[ext_resource type="PackedScene" uid="uid://opp5j4xskb1s" path="res://Objects/plumber.tscn" id="3_xomgh"]
+[ext_resource type="PackedScene" uid="uid://dyhykkej5fyxq" path="res://Objects/flag.tscn" id="4_ggyq5"]
 
 [node name="Level_selector" type="Node2D"]
 position = Vector2(642, 392)
@@ -17,3 +17,19 @@ position = Vector2(-522, 224)
 [node name="Flag" parent="." instance=ExtResource("4_ggyq5")]
 position = Vector2(-426, 168)
 next_level = 1
+
+[node name="Flag2" parent="." instance=ExtResource("4_ggyq5")]
+position = Vector2(-330, 168)
+next_level = 2
+
+[node name="Flag3" parent="." instance=ExtResource("4_ggyq5")]
+position = Vector2(-234, 168)
+next_level = 3
+
+[node name="Flag4" parent="." instance=ExtResource("4_ggyq5")]
+position = Vector2(-138, 168)
+next_level = 4
+
+[node name="Flag5" parent="." instance=ExtResource("4_ggyq5")]
+position = Vector2(-42, 168)
+next_level = 5

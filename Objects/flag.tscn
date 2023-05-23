@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://cvudls5ogjing"]
+[gd_scene load_steps=5 format=3 uid="uid://dyhykkej5fyxq"]
 
 [ext_resource type="Script" path="res://Scripts/Area.gd" id="1_tcsje"]
-[ext_resource type="Texture2D" uid="uid://djfu5mxnt1gd3" path="res://Assets/flag.png" id="2_abuqh"]
+[ext_resource type="Texture2D" uid="uid://djfu5mxnt1gd3" path="res://Assets/art/flag.png" id="2_abuqh"]
+[ext_resource type="AudioStream" uid="uid://co8bbrwthb7i2" path="res://Assets/audio/mario-bros vida.mp3" id="3_htr3f"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2aor0"]
 size = Vector2(16, 16)
@@ -17,6 +18,12 @@ shape = SubResource("RectangleShape2D_2aor0")
 position = Vector2(4.17233e-07, 4.17233e-07)
 scale = Vector2(0.8, 0.8)
 texture = ExtResource("2_abuqh")
+
+[node name="Win" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_htr3f")
+volume_db = -15.445
+pitch_scale = 1.34
+panning_strength = 0.25
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="input_event" from="." to="." method="_on_input_event"]

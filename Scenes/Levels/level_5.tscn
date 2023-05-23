@@ -1,10 +1,10 @@
-[gd_scene load_steps=8 format=3 uid="uid://dupy18vacvfyc"]
+[gd_scene load_steps=8 format=3]
 
-[ext_resource type="Texture2D" uid="uid://den10luw0yqkt" path="res://Assets/Terrain (16x16).png" id="1_0ahtn"]
-[ext_resource type="PackedScene" uid="uid://cgkh0i2fr8lgo" path="res://Objects/plumber.tscn" id="2_o3mkl"]
-[ext_resource type="PackedScene" uid="uid://cvudls5ogjing" path="res://Objects/flag.tscn" id="3_ocf4e"]
-[ext_resource type="PackedScene" uid="uid://dfuxp4fix8ow7" path="res://Objects/coin.tscn" id="7_ueomv"]
-[ext_resource type="PackedScene" uid="uid://djfb40d221xjc" path="res://Objects/enemie.tscn" id="8_55qnk"]
+[ext_resource type="Texture2D" uid="uid://den10luw0yqkt" path="res://Assets/art/Terrain (16x16).png" id="1_0ahtn"]
+[ext_resource type="PackedScene" uid="uid://opp5j4xskb1s" path="res://Objects/plumber.tscn" id="2_o3mkl"]
+[ext_resource type="PackedScene" path="res://Objects/flag.tscn" id="3_ocf4e"]
+[ext_resource type="PackedScene" path="res://Objects/coin.tscn" id="7_ueomv"]
+[ext_resource type="PackedScene" path="res://Objects/enemie.tscn" id="8_55qnk"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lhsx0"]
 texture = ExtResource("1_0ahtn")

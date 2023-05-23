@@ -1,13 +1,13 @@
-[gd_scene load_steps=14 format=3 uid="uid://cul8l74ntw3en"]
+[gd_scene load_steps=11 format=3 uid="uid://cw6wpt8hsoqsi"]
 
-[ext_resource type="Texture2D" uid="uid://den10luw0yqkt" path="res://Assets/Terrain (16x16).png" id="1_5n7tt"]
-[ext_resource type="PackedScene" uid="uid://cgkh0i2fr8lgo" path="res://Objects/plumber.tscn" id="2_00dac"]
-[ext_resource type="PackedScene" uid="uid://bva4ehsnhirle" path="res://Objects/button.tscn" id="3_8627w"]
-[ext_resource type="PackedScene" uid="uid://cvudls5ogjing" path="res://Objects/flag.tscn" id="3_punar"]
-[ext_resource type="PackedScene" uid="uid://djfb40d221xjc" path="res://Objects/enemie.tscn" id="3_rn1tu"]
-[ext_resource type="PackedScene" uid="uid://dqkgho85kqxha" path="res://Objects/button_weight.tscn" id="4_8ubto"]
-[ext_resource type="PackedScene" uid="uid://ctd2gffe4mq1d" path="res://Objects/Dor.tscn" id="4_bt6f2"]
-[ext_resource type="PackedScene" uid="uid://dfuxp4fix8ow7" path="res://Objects/coin.tscn" id="4_j1i08"]
+[ext_resource type="Texture2D" uid="uid://den10luw0yqkt" path="res://Assets/art/Terrain (16x16).png" id="1_5n7tt"]
+[ext_resource type="PackedScene" uid="uid://opp5j4xskb1s" path="res://Objects/plumber.tscn" id="2_00dac"]
+[ext_resource type="PackedScene" path="res://Objects/button.tscn" id="3_8627w"]
+[ext_resource type="PackedScene" uid="uid://dyhykkej5fyxq" path="res://Objects/flag.tscn" id="3_punar"]
+[ext_resource type="PackedScene" path="res://Objects/enemie.tscn" id="3_rn1tu"]
+[ext_resource type="PackedScene" path="res://Objects/button_weight.tscn" id="4_8ubto"]
+[ext_resource type="PackedScene" path="res://Objects/Dor.tscn" id="4_bt6f2"]
+[ext_resource type="PackedScene" uid="uid://c5qyxn4rufuhw" path="res://Objects/coin.tscn" id="4_j1i08"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lhsx0"]
 texture = ExtResource("1_5n7tt")
@@ -607,33 +607,12 @@ texture = ExtResource("1_5n7tt")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_lhsx0")
 
-[sub_resource type="Curve2D" id="Curve2D_g7hgk"]
-_data = {
-"points": PackedVector2Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 96, 0, 0, 0, 0, 0, 0, 0)
-}
-point_count = 3
-
-[sub_resource type="Curve2D" id="Curve2D_4xipi"]
-_data = {
-"points": PackedVector2Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 249, 0, 0, 0, 0, 0, 0, 0)
-}
-point_count = 3
-
-[sub_resource type="Curve2D" id="Curve2D_iuuqq"]
-_data = {
-"points": PackedVector2Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -248, 0, 0, 0, 0, 0, 0, 0)
-}
-point_count = 3
-
 [node name="Level_4" type="Node2D"]
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_yeagj")
 format = 2
 layer_0/tile_data = PackedInt32Array(786459, 458752, 0, 786460, 458752, 0, 786461, 458752, 0, 786462, 458752, 0, 786463, 458752, 0, 786464, 458752, 0, 786465, 458752, 0, 786466, 458752, 0, 786467, 458752, 0, 786468, 458752, 0, 786469, 458752, 0, 786470, 458752, 0, 786471, 458752, 0, 786472, 458752, 0, 786473, 458752, 0, 786474, 458752, 0, 786475, 458752, 0, 786476, 458752, 0, 786477, 458752, 0, 786478, 458752, 0, 786479, 458752, 0, 786480, 458752, 0, 786481, 458752, 0, 786482, 458752, 0, 786483, 458752, 0, 720948, 458752, 0, 786484, 458752, 0, 655413, 458752, 0, 720949, 458752, 0, 655414, 458752, 0, 655415, 458752, 0, 655416, 458752, 0, 56, 458752, 0, 65592, 458752, 0, 131128, 458752, 0, 196664, 458752, 0, 262200, 458752, 0, 327736, 458752, 0, 393272, 458752, 0, 458808, 458752, 0, 524344, 458752, 0, 589880, 458752, 0, 27, 458752, 0, 65563, 458752, 0, 131099, 458752, 0, 196635, 458752, 0, 262171, 458752, 0, 327707, 458752, 0, 393243, 458752, 0, 458779, 458752, 0, 524315, 458752, 0, 1507348, 458752, 0, 1507349, 458752, 0, 1507350, 458752, 0, 1507351, 458752, 0, 1507355, 458752, 0, 1507359, 458752, 0, 1507360, 458752, 0, 1507361, 458752, 0, 1507362, 458752, 0, 1507363, 458752, 0, 1507364, 458752, 0, 1507365, 458752, 0, 1507366, 458752, 0, 1507367, 458752, 0, 1507368, 458752, 0, 1507369, 458752, 0, 1507370, 458752, 0, 1507371, 458752, 0, 1507372, 458752, 0, 1507373, 458752, 0, 1507374, 458752, 0, 1507375, 458752, 0, 1507381, 458752, 0, 1507382, 458752, 0, 1507383, 458752, 0, 1507384, 458752, 0, 1507385, 458752, 0, 1572921, 458752, 0, 1638457, 458752, 0, 1703993, 458752, 0, 2228269, 458752, 0, 2228270, 458752, 0, 2228271, 458752, 0, 2228272, 458752, 0, 2228273, 458752, 0, 2228274, 458752, 0, 2228275, 458752, 0, 2228276, 458752, 0, 2293805, 458752, 0, 2359341, 458752, 0, 2424877, 458752, 0, 2490413, 458752, 0, 2555949, 458752, 0, 2621485, 458752, 0, 2687021, 458752, 0, 2752557, 458752, 0, 2818093, 458752, 0, 2162729, 458752, 0, 2228265, 458752, 0, 1572900, 458752, 0, 1638436, 458752, 0, 1703972, 458752, 0, 1769508, 458752, 0, 1835044, 458752, 0, 1900580, 458752, 0, 1966116, 458752, 0, 2031652, 458752, 0, 2097188, 458752, 0, 2162724, 458752, 0, 2228260, 458752, 0, 2293796, 458752, 0, 2359332, 458752, 0, 2424868, 458752, 0, 2490404, 458752, 0, 2555940, 458752, 0, 2621476, 458752, 0, 2687012, 458752, 0, 2752548, 458752, 0, 2818084, 458752, 0, 2883620, 458752, 0, 2949156, 458752, 0, 3014692, 458752, 0)
-
-[node name="Character" parent="." instance=ExtResource("2_00dac")]
-position = Vector2(491, 182)
 
 [node name="Flag" parent="." instance=ExtResource("3_punar")]
 position = Vector2(664, 520)
@@ -755,29 +734,11 @@ position = Vector2(840, 312)
 [node name="Enemie" parent="Enemies" instance=ExtResource("3_rn1tu")]
 position = Vector2(735, 533)
 
-[node name="Path2D" parent="Enemies/Enemie" index="0"]
-curve = SubResource("Curve2D_g7hgk")
-
-[node name="PathFollow2D" parent="Enemies/Enemie/Path2D" index="0"]
-position = Vector2(0, 0)
-
 [node name="Enemie2" parent="Enemies" instance=ExtResource("3_rn1tu")]
 position = Vector2(509, 357)
 
-[node name="Path2D" parent="Enemies/Enemie2" index="0"]
-curve = SubResource("Curve2D_4xipi")
-
-[node name="PathFollow2D" parent="Enemies/Enemie2/Path2D" index="0"]
-position = Vector2(0, 0)
-
 [node name="Enemie3" parent="Enemies" instance=ExtResource("3_rn1tu")]
 position = Vector2(757, 357)
-
-[node name="Path2D" parent="Enemies/Enemie3" index="0"]
-curve = SubResource("Curve2D_iuuqq")
-
-[node name="PathFollow2D" parent="Enemies/Enemie3/Path2D" index="0"]
-position = Vector2(0, 0)
 
 [node name="Enemie4" parent="Enemies" instance=ExtResource("3_rn1tu")]
 position = Vector2(400, 224)
@@ -787,12 +748,12 @@ rotation = 3.12969
 position = Vector2(711, 177)
 rotation = -3.09994
 
-[node name="CollisionShape2D" parent="Enemies/Enemie5/Path2D/PathFollow2D/Enemie/Area2D" index="0"]
-position = Vector2(-2.08142, -0.914978)
-
 [node name="Enemie6" parent="Enemies" instance=ExtResource("3_rn1tu")]
 position = Vector2(768, 80)
 rotation = -0.932497
+
+[node name="Character" parent="." instance=ExtResource("2_00dac")]
+position = Vector2(579, 185)
 
 [editable path="Enemies/Enemie"]
 [editable path="Enemies/Enemie2"]
