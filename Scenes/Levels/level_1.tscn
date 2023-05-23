@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://8mwnbl40ylai"]
+[gd_scene load_steps=6 format=3 uid="uid://8mwnbl40ylai"]
 
 [ext_resource type="Texture2D" uid="uid://den10luw0yqkt" path="res://Assets/Terrain (16x16).png" id="1_17dne"]
+[ext_resource type="PackedScene" uid="uid://cvudls5ogjing" path="res://Objects/flag.tscn" id="3_c02na"]
 [ext_resource type="PackedScene" uid="uid://cgkh0i2fr8lgo" path="res://Objects/plumber.tscn" id="3_uxv0i"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lhsx0"]
@@ -581,6 +582,15 @@ texture = ExtResource("1_17dne")
 20:10/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 20:10/0/physics_layer_0/angular_velocity = 0.0
 20:10/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+20:7/0 = 0
+20:7/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+20:7/0/physics_layer_0/angular_velocity = 0.0
+20:3/0 = 0
+20:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+20:3/0/physics_layer_0/angular_velocity = 0.0
+18:3/0 = 0
+18:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+18:3/0/physics_layer_0/angular_velocity = 0.0
 
 [sub_resource type="TileSet" id="TileSet_48iyh"]
 physics_layer_0/collision_layer = 1
@@ -591,5 +601,11 @@ sources/0 = SubResource("TileSetAtlasSource_lhsx0")
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_48iyh")
 format = 2
+layer_0/tile_data = PackedInt32Array(2621460, 458752, 0, 2621461, 458752, 0, 2621462, 458752, 0, 2621463, 458752, 0, 2621464, 458752, 0, 2621465, 458752, 0, 2621466, 458752, 0, 2621467, 458752, 0, 2621468, 458752, 0, 2621472, 458752, 0, 2621473, 458752, 0, 2621474, 458752, 0, 2621475, 458752, 0, 2621469, 458752, 0, 2621470, 458752, 0, 2621471, 458752, 0, 2621480, 458752, 0, 2621481, 458752, 0, 2621482, 458752, 0, 2621483, 458752, 0, 2621484, 458752, 0, 2621485, 458752, 0, 2621486, 458752, 0, 2621487, 458752, 0, 2621488, 458752, 0, 2621489, 458752, 0, 2621490, 458752, 0, 2621491, 458752, 0, 2621492, 458752, 0, 2621493, 458752, 0, 2621494, 458752, 0, 2621495, 458752, 0, 2621496, 458752, 0, 2621497, 458752, 0, 2621498, 458752, 0, 2621499, 458752, 0, 2621476, 458752, 0, 2621477, 458752, 0, 2621478, 458752, 0, 2621479, 458752, 0)
 
 [node name="Character" parent="." instance=ExtResource("3_uxv0i")]
+position = Vector2(360, 624)
+
+[node name="Flag" parent="." instance=ExtResource("3_c02na")]
+position = Vector2(920, 632)
+next_level = 2

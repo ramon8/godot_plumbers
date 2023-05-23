@@ -63,6 +63,7 @@ _data = {
 }
 
 [node name="Coin" type="Area2D"]
+collision_mask = 3
 script = ExtResource("1_i1mi0")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

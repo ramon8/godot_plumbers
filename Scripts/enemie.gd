@@ -22,4 +22,3 @@ func _on_body_entered(body):
 func _on_kill_body_entered(body):
 	body.set_velocity(Vector2(body.velocity.x, -300))
 	queue_free()
-	pass # Replace with function body.

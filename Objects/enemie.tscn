@@ -1,84 +1,41 @@
-[gd_scene load_steps=8 format=3 uid="uid://djfb40d221xjc"]
+[gd_scene load_steps=5 format=3 uid="uid://djfb40d221xjc"]
 
-[ext_resource type="Script" path="res://Scripts/enemie.gd" id="1_fpqfy"]
 [ext_resource type="Texture2D" uid="uid://brcq0cuujryjn" path="res://Assets/enemie.png" id="1_k8xdw"]
+[ext_resource type="Script" path="res://Objects/enemie.gd" id="1_su33l"]
 
-[sub_resource type="Animation" id="Animation_lxjsi"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [0]
-}
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xswoe"]
+size = Vector2(24, 23)
 
-[sub_resource type="Animation" id="Animation_o4w0a"]
-resource_name = "walk"
-length = 0.6
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
-"update": 1,
-"values": [0, 1, 2, 3, 4, 5]
-}
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_km0is"]
+size = Vector2(16, 16)
 
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_ankh8"]
-_data = {
-"RESET": SubResource("Animation_lxjsi"),
-"walk": SubResource("Animation_o4w0a")
-}
+[node name="Enemie" type="Node2D"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_mwrjn"]
-size = Vector2(24, 15)
+[node name="Path2D" type="Path2D" parent="."]
+script = ExtResource("1_su33l")
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_rlb80"]
-size = Vector2(22, 4)
+[node name="PathFollow2D" type="PathFollow2D" parent="Path2D"]
+position = Vector2(0, -1)
+rotates = false
 
-[node name="Enemie" type="Area2D"]
-script = ExtResource("1_fpqfy")
+[node name="Enemie" type="Area2D" parent="Path2D/PathFollow2D"]
+collision_mask = 3
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="Sprite2D" type="Sprite2D" parent="Path2D/PathFollow2D/Enemie"]
+position = Vector2(9.53674e-07, -1.5)
 texture = ExtResource("1_k8xdw")
-offset = Vector2(-2.5332e-07, 8.68421)
 hframes = 7
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite2D"]
-libraries = {
-"": SubResource("AnimationLibrary_ankh8")
-}
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Path2D/PathFollow2D/Enemie"]
+position = Vector2(-1, -0.5)
+shape = SubResource("RectangleShape2D_xswoe")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 7.5)
-shape = SubResource("RectangleShape2D_mwrjn")
+[node name="Area2D" type="Area2D" parent="Path2D/PathFollow2D/Enemie"]
+collision_mask = 3
 
-[node name="Ray" type="Node2D" parent="."]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Path2D/PathFollow2D/Enemie/Area2D"]
+position = Vector2(-1, -20)
+shape = SubResource("RectangleShape2D_km0is")
 
-[node name="CheckCollision" type="RayCast2D" parent="Ray"]
-position = Vector2(12, 0)
-target_position = Vector2(4, 0)
-
-[node name="CheckFall" type="RayCast2D" parent="Ray"]
-position = Vector2(13, 15)
-target_position = Vector2(0, 6)
-
-[node name="Kill" type="Area2D" parent="Ray"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Ray/Kill"]
-position = Vector2(0, -3)
-shape = SubResource("RectangleShape2D_rlb80")
-
-[connection signal="body_entered" from="." to="." method="_on_body_entered"]
-[connection signal="body_entered" from="Ray/Kill" to="." method="_on_kill_body_entered"]
+[connection signal="body_entered" from="Path2D/PathFollow2D/Enemie" to="Path2D" method="_on_enemie_body_entered"]
+[connection signal="body_entered" from="Path2D/PathFollow2D/Enemie/Area2D" to="Path2D" method="_on_area_2d_body_entered"]
