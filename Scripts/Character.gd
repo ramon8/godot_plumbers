@@ -105,7 +105,7 @@ func handle_animation():
 
 func set_labels():
 	var direction = Input.get_vector("left", "right", "up", "down")
-	$debug.set("text", position.y > 650)
+	$debug.set("text", position.y > 3000)
 
 func is_positive(value):
 	return value >= 0

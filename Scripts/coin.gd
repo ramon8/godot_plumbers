@@ -1,5 +1,6 @@
 extends Node2D
 
+@export var jump_velocity: int = -350
 var plumber = load("res://Objects/plumber.tscn")
 @onready var parent: Node = get_parent();
 
@@ -12,5 +13,5 @@ func _on_animation_player_animation_finished(anim_name):
 		var instance = plumber.instantiate();
 		instance.position = position
 		get_parent().add_child(instance)
-		instance.set_velocity(Vector2(0, -300))
+		instance.set_velocity(Vector2(0, jump_velocity))
 		queue_free()

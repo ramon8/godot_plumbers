@@ -3,7 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://blnubvuvrp3l2" path="res://Objects/camera.tscn" id="1_emjpw"]
 [ext_resource type="Script" path="res://main.gd" id="1_ffshk"]
 [ext_resource type="Shader" path="res://test.gdshader" id="3_a46sy"]
-[ext_resource type="PackedScene" uid="uid://8mwnbl40ylai" path="res://Scenes/Levels/level_1.tscn" id="4_j1mc3"]
+[ext_resource type="PackedScene" uid="uid://dupy18vacvfyc" path="res://Scenes/Levels/level_5.tscn" id="4_b1nbm"]
 [ext_resource type="Texture2D" uid="uid://den10luw0yqkt" path="res://Assets/Terrain (16x16).png" id="5_imgd4"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_slghq"]
@@ -645,7 +645,7 @@ texture = SubResource("CanvasTexture_uhal4")
 
 [node name="Levels" type="Node" parent="."]
 
-[node name="Level_1" parent="Levels" instance=ExtResource("4_j1mc3")]
+[node name="Level_5" parent="Levels" instance=ExtResource("4_b1nbm")]
 
 [node name="Label" type="Label" parent="."]
 offset_left = -624.0

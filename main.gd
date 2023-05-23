@@ -1,8 +1,11 @@
 #TODO:
 #	-Gumbas collider must be reworked
 #	-Gumba animation dead
+#	-Gumba animation walk
 #	-Animation on finish level
 #	-Level selector between levels?
+#	-Green button green wall
+#	-Fire ball enemy
 
 extends Node2D
 
